@@ -1,0 +1,1501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		009A0E638DA97847A77154067CF3F612 /* SDImageTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 49F370C75E22E99CCF23D261857AB20E /* SDImageTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00FC105008881A029801214905EF880E /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1027A44051A7347DCDA02E1D3D471CCD /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01C143613DC7EE0E71276E3F65564D76 /* SDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6C43AD0DD7544C25CC3E41D94A72DE /* SDWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02AEED865D2144E99A2ED4AFEFBDD0EB /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A60CA6F62CF05E070ADED9C8BE07D1 /* URLBuilder.swift */; };
+		02F8E2E5F4ACC3C13DE0B030FBCE9024 /* SDImageCachesManagerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDB652395C852E27A795395D61C572B /* SDImageCachesManagerOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0627C55B3354C286BF0B3ACA34834686 /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 812270965DB77A42C7DEF478FFC3986C /* UIImage+Transform.m */; };
+		063FFBDC016F24C0572699BC375BD549 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F1936E63B952417203979B8316AFDA6D /* UIButton+WebCache.m */; };
+		068B930AACCBE8A3F1490AD617B94854 /* SDWebImageOptionsProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C8556ED8FE08B803A45476CF8D914FF /* SDWebImageOptionsProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07D4E644D9A17811A15DD5F40E6C2B31 /* SDImageCachesManagerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 978D7232FE4041370B1DAAB80A4840DD /* SDImageCachesManagerOperation.m */; };
+		08757A03D1D4C7B35E41BE00AEEE05E4 /* UIImage+Transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 20989BC94B82127DC3E395D1C253CCCB /* UIImage+Transform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0888FB1290E672D40674182BE1C4691F /* UIImage+Metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 23A2FE7A9159117F38803B2CDDBE1934 /* UIImage+Metadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B43D1309D55F7D79ADB49B583DB5AE4 /* SDWebImageError.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5A21DAF2772529DA49274D5A1B317 /* SDWebImageError.m */; };
+		0E36EA5C7618E8E08476894A051BD4AA /* SDInternalMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB71271BFAB3DE5279A91502A893242 /* SDInternalMacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0F485A7BB700908C8E673FF1EC81FB81 /* SDAnimatedImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C19E3D4BD2ADA71D794E818476D60A55 /* SDAnimatedImageView+WebCache.m */; };
+		0FC7CDB5539F0298FB21E260ECBA7036 /* SDImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D66B47CFED77958180187603473F2F00 /* SDImageCodersManager.m */; };
+		0FD6E4302675A838EAF83B94430CC071 /* SDWebImageIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D46F889A565AF7F6058F33BF908B7DC1 /* SDWebImageIndicator.m */; };
+		1006095946E4109383F7048CA5F72D2C /* SDAnimatedImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B87E588B2579E5B86A10628F75BE9D /* SDAnimatedImageRep.m */; };
+		10A28642AC238051087363EFA4201876 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461C9BA22FC522BD6BFDF1668D90458 /* UIView+WebCacheOperation.m */; };
+		10C82A7C0264253E17B240F2B7B65EB0 /* SDWebImageError.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B0A7BE8AE4C333F1D5E39F1B83AC9E9 /* SDWebImageError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		115DC8778F05479BC45808CA82D04B8B /* SDWebImageDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0D03CCFD4D405AD6561950C4EBFBF2 /* SDWebImageDefine.m */; };
+		1B1F16A79705961E586AA513F2548B1C /* SDImageFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FAB954C003278AF76EAE9D98E1CB5A6 /* SDImageFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B72CDEDFC297AB1BD12B988376CBA69 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CACF57E6A73C48F752C3F14102C5DC56 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B94D8A5E2CB45B05766B016D074D8BE /* SDImageGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 48479FF2DFB537C1B5C4EA4ACFD5D599 /* SDImageGraphics.m */; };
+		1FB1C27C9F9793C1A5316B78EB718558 /* SDImageCoderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC8F74D9DC17D579322C643DC81393B /* SDImageCoderHelper.m */; };
+		23407F228FA74447CFB4B9126845EF46 /* SDImageAPNGCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 87EC8CFE81CB84F724097A73D59B1B72 /* SDImageAPNGCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25CB49198B6272330A0E0A86606F8F9A /* Pods-spotify-home-objc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B541B1A40A9BCD43696B390F09C1521 /* Pods-spotify-home-objc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		287306D6C2EFBD0E30FE51129ECD9635 /* NSBezierPath+RoundedCorners.h in Headers */ = {isa = PBXBuildFile; fileRef = B5ECDF678D89451FEA114916AF711292 /* NSBezierPath+RoundedCorners.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2A5837A12758AD1D32D8757786526FBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7458A52B903C39C9CFC9B6A9BDCC5B2B /* Foundation.framework */; };
+		336204CF75A0B095E8882C3101B1584B /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B4B0773246FCBE124B526206B63F53 /* SDWebImageManager.m */; };
+		360C95C504D849F1070C6A8917E42569 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B6542FF37C93B471076698F3D2C1E7 /* SDWebImageCompat.m */; };
+		3627AF54F9F4F05EA2C1B0D08A56229E /* SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2AA84167517F6973D0CF16C5498EF6 /* SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38DAE9E1030EB98F739DE5048FBC2DBD /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 645D0AE483C4D98C1002B2B29ECED84B /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A6F2FA629CA84DD6664EC40EAE4C2E7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B346D06D281D4D3C396F9BBE3DBF0FFE /* ImageIO.framework */; };
+		3B5B203FB631A824440D2AF185B7061A /* SDWebImageDownloaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F91E36929A545AED0B1F8A5E06F58C /* SDWebImageDownloaderConfig.m */; };
+		3CF4CDBA30FDEFE44484F65ECB765B6A /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2AA46D57259A7B5E202568B795D100 /* Session.swift */; };
+		3FB61873B741F363DDC4395D3A4BF1F6 /* SDInternalMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B725FAA1849DE751FB1217A05B3D6C5 /* SDInternalMacros.m */; };
+		409BAAA8D878BCF7EDEECC680C8CBD85 /* NSButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 97A57718C2907E30380F9809C18DEB88 /* NSButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41CE5B8CC347502628D4DCA9D9E51A26 /* SDImageAPNGCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8362D756E96A4B4BC285A77C3DC0B78 /* SDImageAPNGCoder.m */; };
+		420F46F148A06FFBCAF54E8C9D3AFA2B /* SDImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = BCA16EB412185EDCC2954623D63FCD0D /* SDImageLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		426943C9B9BF23DD6AC275EC5DA25A4E /* SDAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CFDFEAF5E740C06E3CC10965E68EB /* SDAnimatedImageView.m */; };
+		436455B287A50944F60BAB699E02C75D /* SpotifyLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AEA11B70F8D935613B71F38679F795 /* SpotifyLoginPresenter.swift */; };
+		47B615AA404D2D3CE42B35C429F4CF2D /* SDAnimatedImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC26AEDCEDEFE5E13ACD2694A3CA9DD /* SDAnimatedImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495930CB82747409F31DFB0759BAD359 /* SDImageIOCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EE6649DA7C958FD9B4DA370E6AFEF14 /* SDImageIOCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EA435E0385E273CAE57F8984F533361 /* spotifylogo-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 294FFB13C862A3200181873D17D7C459 /* spotifylogo-32@2x.png */; };
+		561A7221B1DDAAF4C51B02312A9E46A4 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D07DBACDD822C1B73B6FCC99C3D284 /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58D8C27862BC6F529079213790882C34 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A90534D10ED94F2EB78EF53A219A35E /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58E9947B0A2C94CE1764B784E5FA5455 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7458A52B903C39C9CFC9B6A9BDCC5B2B /* Foundation.framework */; };
+		5A72CDBF2B0A3DB97064B76DC2209007 /* SDImageAssetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F6E0F35086681B0ECA719C3398273EF /* SDImageAssetManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5BD42A57C5E0B2FB9A50CD69D4327084 /* SessionLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C1B0A92F986223CC378C47F8B0D799 /* SessionLocalStorage.swift */; };
+		63A83127EE2B6ED3717FD235D0996789 /* SDWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC6DBD89F2A7A10376D8F2A23849ABB /* SDWeakProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		66DCC57D2FABF30729A92622A65B63E0 /* Pods-spotify-home-objcTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2CA9915884E13DB757387E67C915AF /* Pods-spotify-home-objcTests-dummy.m */; };
+		6B489A61A6992138C20E0835EE0C1756 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D55A592D071BE3BD0BDAE1B20BDA66 /* NSData+ImageContentType.m */; };
+		712D4B7DA8EF586CAE027BC47C61BF97 /* Pods-spotify-home-objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB951A4FAEB6455C9FB54FCEB692F39 /* Pods-spotify-home-objc-dummy.m */; };
+		716AE33E697433F85447D67CF60530D7 /* SDWebImageCacheSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 31109FB5CEBD1058F56B2A1AD6295D7E /* SDWebImageCacheSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		727981988B1FE5AAF1A6AC51BE893EAF /* SDWebImageCacheKeyFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA5DD8759A2E7E87FA244939E8CD143 /* SDWebImageCacheKeyFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7280165969E68B5EEA95D04CD8CDEE7C /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D8A8D4051802DD3F88E893D47B7C41 /* UIImageView+WebCache.m */; };
+		7351DEEC4D3F46EA31815C513745E218 /* SDWebImageOptionsProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BA23D22FD12C8D25847C043D66D16 /* SDWebImageOptionsProcessor.m */; };
+		75878CF6589FE26CBE01520B66BFF0DA /* SDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D4968E3D3F744D46EE95DFB8ECCE9FAD /* SDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		760C6088A78D44576FBEFC7BE5D29D24 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75675FE6982010E1F5054DAB97780B9 /* Scope.swift */; };
+		78756F8FB982BA5688284C0799AF5009 /* SDImageGIFCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F018181E72F07D83CC72FB79E1BC69C /* SDImageGIFCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78A069F21AD2BECEE4EF6A9A9DE1726A /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0098CA78051FDAD08075D9C11B2CE635 /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79A6247325B4AD1FC5209A8057CBFE07 /* NSImage+Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 16BCCEE1CC7D6A180B8C01FDBCD62F78 /* NSImage+Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B38FD33536C9F1CFC7E5F6B4FDFD6F3 /* UIImage+MemoryCacheCost.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B9C0AB4BC31B010CDEA6E173520DF8 /* UIImage+MemoryCacheCost.m */; };
+		7B8FA437539B67696F939A2F88DFF71D /* SpotifyLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A93306A90F3ADD1925D48253F9D7A /* SpotifyLoginButton.swift */; };
+		7CA70761B0E9AB0E2D790DA2815CDD0B /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B0EBC0944C0F68DFA539426CF1BEC /* SDWebImage-dummy.m */; };
+		7D4FE7F60163AE64FC64E382D8B28BEA /* SDWebImageCacheSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A485CDFADC2F40B44487EF3110BF8C /* SDWebImageCacheSerializer.m */; };
+		7D6E5145ADD4B2E13476D209C28C935F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC483991BB1863AB59B23A572CF98F /* Constants.swift */; };
+		80AB399C91AAC70B2E707D8DE308B4C2 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1A9DEF5E447B5A299D33DC45F227C4 /* SDImageCache.m */; };
+		83CE2EC2C1F3ED6E42E50E3692D71CEE /* UIView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AC5E40E5018180BACF2AE756B56FD404 /* UIView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843489CD3E003F538C84DEB84175B5FE /* SDWebImageDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2292976CA420FA65F1BD43A838B0F4EE /* SDWebImageDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		873F6DC709FBB5485DDD640BEC2D74DD /* SDImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA6CEF8A5C6FD219B1FCA10D8F92558 /* SDImageGIFCoder.m */; };
+		885879472586E737F6B296421DB819CB /* SDImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CEF202FC4AD65CAA6BF431CB5FE095 /* SDImageLoader.m */; };
+		8864C7CC00E9A712A359EF511F74BFF1 /* UIColor+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 25428B14C522228BBBBA890A8D2AAE56 /* UIColor+HexString.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		89B799AE61733236B6080350BFE6618B /* SDImageLoadersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E186186F0BD42B42933A223ADC60E247 /* SDImageLoadersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89FBD2D99FE4287B13EE802AF92FB0C8 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA64477FB52FB6E6EEF1FD3845AB8137 /* SDWebImageDownloaderOperation.m */; };
+		8B404F1FB37183509CDB526E5B96887C /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B17D6ADC7DCEAEAD79C259B04D0D28 /* SDWebImagePrefetcher.m */; };
+		8B49F9C1EA9DDB6A64AA21CC788FFB6A /* UIImage+MemoryCacheCost.h in Headers */ = {isa = PBXBuildFile; fileRef = AE1299921E834701489831BF76E06953 /* UIImage+MemoryCacheCost.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC61D6A369C14EE764365B7113351DC /* SDImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513D1B15AD6AA36E39874AE3257522D /* SDImageTransformer.m */; };
+		8C395FA207585FE707480C8B140B6D29 /* SDImageGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB0973F969329AD384349D9CD6CB891 /* SDImageGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D6BED16EEDED7F9957F53182FD4F3AE /* SDImageCacheDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = C26F302F748FB19D376281FE83F59C22 /* SDImageCacheDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F72E184C79C81EB663817233AEED59C /* SDImageCoderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E4D332580C3364B18417A8FC8A1359B /* SDImageCoderHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92EC6F2DEA3A1DD9E3E9933CF26E2BF4 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A7895382947D302D0F6109AC7F574E1E /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93E57CD9B6819410169512AD1C431F23 /* SDWebImageDownloaderRequestModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = D84968C2EAED1C3205702B5F9B9D507A /* SDWebImageDownloaderRequestModifier.m */; };
+		979E6B019379742543A3D5F6765DE879 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 091952ABE0E17F453523277C6844A73F /* UIColor+HexString.m */; };
+		999875B9100EBDCFAEBDA20F5DAC8913 /* SpotifyLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF704ACF121C3D46369ECFC79BBF436 /* SpotifyLogin-dummy.m */; };
+		9BBA7039E6125618A8AE1E855840B9C9 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = AC652197D28B8BA80B4BD490760338EF /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C1AC285B434673B1DC3E58D271656A4 /* NSBezierPath+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD09544116F91E37B9DCAF38F064CBB /* NSBezierPath+RoundedCorners.m */; };
+		9CE4A275270DD253A530548AC7B40332 /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E824029E3EF7EA7F5E2D6C4FDFCA3497 /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ED155BD93723E75BEC4A1B2C0387484 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D6ACC2777BA3AF957E64995EBCB291 /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F85D502C11E667EB4ECAF6BEFE6385B /* SDWebImageDownloaderRequestModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 01057F81E45DB00FF5033DDEAD75065A /* SDWebImageDownloaderRequestModifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F921CF7A638EC34BE56202F53DBE372 /* SDAsyncBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2305D9C7EF6BC315758A967D37CD9E31 /* SDAsyncBlockOperation.m */; };
+		A0BD712651AEC37D846E16B00F055B68 /* SDImageAPNGCoderInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B923778F4FD6DC6D505365DC79A6BA8 /* SDImageAPNGCoderInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A4F4E855F9748F665FBA6F684D094290 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E3E11AE957371D442A432083368F4F /* UIImageView+HighlightedWebCache.m */; };
+		A5A8F03B1830E1C5A88F252855C1CE51 /* SDDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1E739757C3E6B025CC36CD27836428 /* SDDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A60EF43F1A12A2746195C8C9E52856C2 /* UIImage+ForceDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = D91F576B068D93D04F22643C0FD9471D /* UIImage+ForceDecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A812EA5FC87313116A927C755FB64F67 /* SDAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 401A0541262BD989E014F2B8EA014B58 /* SDAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A872FDD89569830657BED3734F87EDF8 /* SDAnimatedImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E9E5348E970BEA7272A3E0D8E1A81109 /* SDAnimatedImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA5C18B0661A78C0355A69CBFB199F73 /* SDMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 352A5F6EA6AB68B4ACC5F884157B1A69 /* SDMemoryCache.m */; };
+		AE24835A134B49B50F4C17AB5F7D792E /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB540ECF1B5EC6CB08C1A6F54517302 /* SDImageCacheConfig.m */; };
+		B00293DAF19D784240BAF680FB060675 /* SDImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5509E4DBFAD86CCB5C144A7A860CE589 /* SDImageCodersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B00812453F0B04B7F9395B7860994F21 /* SDImageGIFCoderInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = DDA12E53B0E8B824D834E81550D84174 /* SDImageGIFCoderInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B132C8F13FA0737007EFDA028117E8ED /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 28848FBBE0302C6B7C270F5D93EF1097 /* UIImage+MultiFormat.m */; };
+		B155ACE2A9BC477405A9C7E95DBB1308 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD87652A2B36CDA2D1F99A38BB4F16C /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B17950DE21C6D7EC7B922CC794716F16 /* SDWebImageDownloaderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 558E2AA7F6B3D11A7D156B435C98BA89 /* SDWebImageDownloaderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B565FB9D00DE0DD8E3B5793F284A34A3 /* SDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D8C015DA10CCFAA592660B16A02A3 /* SDImageCoder.m */; };
+		B65D445DBBFC21A569ECCAED7AA1D81B /* SafariDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C5027A45B42603B08D5A06A62DF56C /* SafariDelegate.swift */; };
+		B7C83123773CD621C3CDDF923F26DF62 /* SDMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FEA5589486A0D20BD7952E1C683AF7FA /* SDMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B85DC7FE0E61C9267390EF4B2D141EE8 /* UIImage+Metadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 8742558790C4AC1CFAAE2B7E526BDE44 /* UIImage+Metadata.m */; };
+		B8ADEC7D13466298749407ACF5993194 /* SDAsyncBlockOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E45A7BB4B68591310A0E324A8373D7F1 /* SDAsyncBlockOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B9D2E795C80EEB4A584277371D079C5F /* SDImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DA3C06223B06E37E15B4A4B17F11D9 /* SDImageIOCoder.m */; };
+		BCE60E12AC3CED97CEAB505B11ED5A89 /* Pods-spotify-home-objcTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F843EA37D394817529329609203CB07B /* Pods-spotify-home-objcTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1335BA5328E2A24E935F2FA21927E92 /* SDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9138D8C55909E93618FBBD5BBD0672DF /* SDWeakProxy.m */; };
+		C399A6C92E3675C22DEEFB6B44533E01 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B34E15B3A5158CC127866D4C7DE8BCEC /* UIView+WebCache.m */; };
+		C7450F2B1834C941A4422881B96C82EC /* SDImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE477600B397A6421C416A5BAF55284 /* SDImageFrame.m */; };
+		C7BC0998F116AC6C3DD0E63BE6351AFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7458A52B903C39C9CFC9B6A9BDCC5B2B /* Foundation.framework */; };
+		CA8798A921771A9435C5BA3C497C9B97 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A0E4889E4C42065DE0B91C9F68684F /* UIImage+GIF.m */; };
+		CBA6A78DAC794EA36141870A0D423E94 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = EA10BD6E9C1B808C1EE4CF2645DE03EF /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC9E4F4D617750F97C966C812B9B274E /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE7F64CDEFD84CFDE57FDAD034123E /* UIImage+ForceDecode.m */; };
+		CDA3B99F37D90CDE687A444826D50622 /* spotifylogo-32@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DBF455629023DF7F6CCFE32B0ABF7A3 /* spotifylogo-32@3x.png */; };
+		CE0383FA23229982264DE1C62FD058B5 /* NSImage+Compatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B292A7D877DCA818E0F24D3891A22 /* NSImage+Compatibility.m */; };
+		D1B868E31F11B9A0401A293A66EE9743 /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 07173F21958B257F6A5DED22FA5362D5 /* NSButton+WebCache.m */; };
+		D2D57C8ABBA316C82133762EC0BFF9DA /* SDAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 061551B8BF38BA1C2D58A4CD3435795E /* SDAnimatedImage.m */; };
+		D3F69297617EAA03D45B491FCFA83117 /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B8877304546C4AFF379BA9010029264E /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D421A6C52D31905BFD0446659AA1CF6D /* SpotifyLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD66E71013213BD5AB63702162FBB01 /* SpotifyLogin.swift */; };
+		D6352673D5457CEB2B4827EDAA8FA27F /* SDImageCachesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CD296E8675D7BEB72E53430ABC508A5 /* SDImageCachesManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8D70C7BD87E490E130DFD97E79AF622 /* SDAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A4F31E8792CD9651C368286F562770 /* SDAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D973CC48A6FD2414A837058322710CAB /* SDWebImageIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 25AD5D1F69E047A576A652A15BA51783 /* SDWebImageIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDA3E1BC9E49D518F892049CFE3DCE4D /* SDImageCachesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 867746AFC610D7E04AFFA6647D4EBD09 /* SDImageCachesManager.m */; };
+		DE06865B937DF75D3E8F26F9302F8F21 /* SDImageLoadersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EADC30F860A48B3BD6154AC59CAD1182 /* SDImageLoadersManager.m */; };
+		DF63C07AA385E2B74B816ADDA692A301 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3A7694CA40F2CAEABC345A310DC4D1 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3F64365EC33CA98293FC9F28AAF1288 /* SDmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 61DAA1FA6F06288F5B31A9315879DB96 /* SDmetamacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E5AC4C832B1529FB0BE47728E8136798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7458A52B903C39C9CFC9B6A9BDCC5B2B /* Foundation.framework */; };
+		E5BCFB8A46AD0A3ED56126DE8E0EFEFB /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 329AEB7C3432EF8F54E6D59618C4E676 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EABBCA8480DDAE4C07EA4F5B48A39264 /* SDImageCacheDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 282C38DBB3B82FFEEDF7BC58797FE2A1 /* SDImageCacheDefine.m */; };
+		EBB0868CBE28A4147CB8F759C3F4B4C4 /* SDWebImageCacheKeyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E6CBD9026AD2A421FF2DF98AD1E35F /* SDWebImageCacheKeyFilter.m */; };
+		F17A0D595C436A7160D3F2D568B68A5A /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F107DA5ED8E353A4F88A516F6E1E1604 /* SDWebImageDownloader.m */; };
+		F1B84F94963410C8853E35E1B5D1305D /* SDImageAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9716642ADD622FE9912436F37165BB /* SDImageAssetManager.m */; };
+		F239CDF6415D66A434BB274F0AA5FDA1 /* SDWebImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EB531D909D48E9F30ABA1006B7C67D06 /* SDWebImageTransition.m */; };
+		F2A548F95FAEFDEE91655198BDA130F9 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = B87B64B7919B8786F423164C812AB955 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84C432F6010D60D9FEEA7E3AA1D92BB /* SpotifyLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = BE12082F19D73231745BFC1EAC59B53A /* SpotifyLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9687893E17A4489CC756C1669CB8781 /* SDDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B5188F0EE5F30EFD932C741900EE7691 /* SDDiskCache.m */; };
+		FB30A55401B78BE1C682E40A3C4F81DF /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84F30F1AC05C036EF89002FF463BA7D /* Networking.swift */; };
+		FD993DEADBBBF9B934934C852B28C118 /* spotifylogo-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 5861B9E038844BBFEE0AFC148AA556E3 /* spotifylogo-32.png */; };
+		FF232C4B870FF2F9F0A6EC0ED1F39EDF /* SpotifyLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75DC79468314FC5699792266154B92DC /* SpotifyLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CBFA8091D43976B929F029CC2F95157 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
+			remoteInfo = SDWebImage;
+		};
+		DEFE193B60F36D9D639DC8035A8947C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96D928A4A6B8053A24C671D96BC6B52B;
+			remoteInfo = "Pods-spotify-home-objc";
+		};
+		EFDF28D262B05AAF6A23E5AA0493FC17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3EF3F58964FDE51A71B36344F566F9B;
+			remoteInfo = SpotifyLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0098CA78051FDAD08075D9C11B2CE635 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/Core/SDImageCache.h; sourceTree = "<group>"; };
+		01057F81E45DB00FF5033DDEAD75065A /* SDWebImageDownloaderRequestModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderRequestModifier.h; path = SDWebImage/Core/SDWebImageDownloaderRequestModifier.h; sourceTree = "<group>"; };
+		0116A286C39D29155E7A175A1C337B62 /* SDWebImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SDWebImage-Info.plist"; sourceTree = "<group>"; };
+		0457C5D44279A500ED5683359F3323D0 /* Pods-spotify-home-objcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotify-home-objcTests.release.xcconfig"; sourceTree = "<group>"; };
+		0461C9BA22FC522BD6BFDF1668D90458 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/Core/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		061551B8BF38BA1C2D58A4CD3435795E /* SDAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImage.m; path = SDWebImage/Core/SDAnimatedImage.m; sourceTree = "<group>"; };
+		07173F21958B257F6A5DED22FA5362D5 /* NSButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSButton+WebCache.m"; path = "SDWebImage/Core/NSButton+WebCache.m"; sourceTree = "<group>"; };
+		091952ABE0E17F453523277C6844A73F /* UIColor+HexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "SDWebImage/Private/UIColor+HexString.m"; sourceTree = "<group>"; };
+		0B923778F4FD6DC6D505365DC79A6BA8 /* SDImageAPNGCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoderInternal.h; path = SDWebImage/Private/SDImageAPNGCoderInternal.h; sourceTree = "<group>"; };
+		0E1E739757C3E6B025CC36CD27836428 /* SDDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDiskCache.h; path = SDWebImage/Core/SDDiskCache.h; sourceTree = "<group>"; };
+		0F9716642ADD622FE9912436F37165BB /* SDImageAssetManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAssetManager.m; path = SDWebImage/Private/SDImageAssetManager.m; sourceTree = "<group>"; };
+		1027A44051A7347DCDA02E1D3D471CCD /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/Core/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		12B6542FF37C93B471076698F3D2C1E7 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/Core/SDWebImageCompat.m; sourceTree = "<group>"; };
+		15AEA11B70F8D935613B71F38679F795 /* SpotifyLoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpotifyLoginPresenter.swift; path = Sources/SpotifyLoginPresenter.swift; sourceTree = "<group>"; };
+		16BCCEE1CC7D6A180B8C01FDBCD62F78 /* NSImage+Compatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+Compatibility.h"; path = "SDWebImage/Core/NSImage+Compatibility.h"; sourceTree = "<group>"; };
+		18A60CA6F62CF05E070ADED9C8BE07D1 /* URLBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLBuilder.swift; path = Sources/Internal/URLBuilder.swift; sourceTree = "<group>"; };
+		1B725FAA1849DE751FB1217A05B3D6C5 /* SDInternalMacros.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDInternalMacros.m; path = SDWebImage/Private/SDInternalMacros.m; sourceTree = "<group>"; };
+		20989BC94B82127DC3E395D1C253CCCB /* UIImage+Transform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Transform.h"; path = "SDWebImage/Core/UIImage+Transform.h"; sourceTree = "<group>"; };
+		2292976CA420FA65F1BD43A838B0F4EE /* SDWebImageDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDefine.h; path = SDWebImage/Core/SDWebImageDefine.h; sourceTree = "<group>"; };
+		2305D9C7EF6BC315758A967D37CD9E31 /* SDAsyncBlockOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAsyncBlockOperation.m; path = SDWebImage/Private/SDAsyncBlockOperation.m; sourceTree = "<group>"; };
+		23A2FE7A9159117F38803B2CDDBE1934 /* UIImage+Metadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Metadata.h"; path = "SDWebImage/Core/UIImage+Metadata.h"; sourceTree = "<group>"; };
+		25428B14C522228BBBBA890A8D2AAE56 /* UIColor+HexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "SDWebImage/Private/UIColor+HexString.h"; sourceTree = "<group>"; };
+		25AD5D1F69E047A576A652A15BA51783 /* SDWebImageIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageIndicator.h; path = SDWebImage/Core/SDWebImageIndicator.h; sourceTree = "<group>"; };
+		282C38DBB3B82FFEEDF7BC58797FE2A1 /* SDImageCacheDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheDefine.m; path = SDWebImage/Core/SDImageCacheDefine.m; sourceTree = "<group>"; };
+		28848FBBE0302C6B7C270F5D93EF1097 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/Core/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		28C5027A45B42603B08D5A06A62DF56C /* SafariDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariDelegate.swift; path = Sources/Internal/SafariDelegate.swift; sourceTree = "<group>"; };
+		294FFB13C862A3200181873D17D7C459 /* spotifylogo-32@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "spotifylogo-32@2x.png"; path = "SpotifyLogin/Resources/spotifylogo-32@2x.png"; sourceTree = "<group>"; };
+		2AB5C3690B17E64FE10D057BC5032DA2 /* Pods-spotify-home-objcTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spotify-home-objcTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2B0A7BE8AE4C333F1D5E39F1B83AC9E9 /* SDWebImageError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageError.h; path = SDWebImage/Core/SDWebImageError.h; sourceTree = "<group>"; };
+		2CFDB7263064E67A4C067751CDD3F9D1 /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SDWebImage.modulemap; sourceTree = "<group>"; };
+		2CFE7F64CDEFD84CFDE57FDAD034123E /* UIImage+ForceDecode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ForceDecode.m"; path = "SDWebImage/Core/UIImage+ForceDecode.m"; sourceTree = "<group>"; };
+		2EE6649DA7C958FD9B4DA370E6AFEF14 /* SDImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOCoder.h; path = SDWebImage/Core/SDImageIOCoder.h; sourceTree = "<group>"; };
+		2F38761D268E4ECE3EF7D48D204E041C /* Pods-spotify-home-objcTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spotify-home-objcTests.modulemap"; sourceTree = "<group>"; };
+		2F6E0F35086681B0ECA719C3398273EF /* SDImageAssetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAssetManager.h; path = SDWebImage/Private/SDImageAssetManager.h; sourceTree = "<group>"; };
+		308CFDFEAF5E740C06E3CC10965E68EB /* SDAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageView.m; path = SDWebImage/Core/SDAnimatedImageView.m; sourceTree = "<group>"; };
+		31109FB5CEBD1058F56B2A1AD6295D7E /* SDWebImageCacheSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCacheSerializer.h; path = SDWebImage/Core/SDWebImageCacheSerializer.h; sourceTree = "<group>"; };
+		329AEB7C3432EF8F54E6D59618C4E676 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/Core/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		32B2237AFD92F60844617591F137814B /* Pods-spotify-home-objc-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-spotify-home-objc-frameworks.sh"; sourceTree = "<group>"; };
+		352A5F6EA6AB68B4ACC5F884157B1A69 /* SDMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDMemoryCache.m; path = SDWebImage/Core/SDMemoryCache.m; sourceTree = "<group>"; };
+		36271283A473830DDAF94DCED891C324 /* Pods-spotify-home-objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotify-home-objc.debug.xcconfig"; sourceTree = "<group>"; };
+		37EF30CB0994ECAA871DDBD6C3EBDDB2 /* SpotifyLogin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SpotifyLogin.xcconfig; sourceTree = "<group>"; };
+		3A90534D10ED94F2EB78EF53A219A35E /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/Core/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		3AB71271BFAB3DE5279A91502A893242 /* SDInternalMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDInternalMacros.h; path = SDWebImage/Private/SDInternalMacros.h; sourceTree = "<group>"; };
+		3C8556ED8FE08B803A45476CF8D914FF /* SDWebImageOptionsProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOptionsProcessor.h; path = SDWebImage/Core/SDWebImageOptionsProcessor.h; sourceTree = "<group>"; };
+		3CD296E8675D7BEB72E53430ABC508A5 /* SDImageCachesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManager.h; path = SDWebImage/Core/SDImageCachesManager.h; sourceTree = "<group>"; };
+		3E4D332580C3364B18417A8FC8A1359B /* SDImageCoderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoderHelper.h; path = SDWebImage/Core/SDImageCoderHelper.h; sourceTree = "<group>"; };
+		3F9A93306A90F3ADD1925D48253F9D7A /* SpotifyLoginButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpotifyLoginButton.swift; path = Sources/SpotifyLoginButton.swift; sourceTree = "<group>"; };
+		401A0541262BD989E014F2B8EA014B58 /* SDAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImage.h; path = SDWebImage/Core/SDAnimatedImage.h; sourceTree = "<group>"; };
+		437BA23D22FD12C8D25847C043D66D16 /* SDWebImageOptionsProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageOptionsProcessor.m; path = SDWebImage/Core/SDWebImageOptionsProcessor.m; sourceTree = "<group>"; };
+		48479FF2DFB537C1B5C4EA4ACFD5D599 /* SDImageGraphics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGraphics.m; path = SDWebImage/Core/SDImageGraphics.m; sourceTree = "<group>"; };
+		48E6CBD9026AD2A421FF2DF98AD1E35F /* SDWebImageCacheKeyFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheKeyFilter.m; path = SDWebImage/Core/SDWebImageCacheKeyFilter.m; sourceTree = "<group>"; };
+		49F370C75E22E99CCF23D261857AB20E /* SDImageTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageTransformer.h; path = SDWebImage/Core/SDImageTransformer.h; sourceTree = "<group>"; };
+		4AB951A4FAEB6455C9FB54FCEB692F39 /* Pods-spotify-home-objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spotify-home-objc-dummy.m"; sourceTree = "<group>"; };
+		4AD87652A2B36CDA2D1F99A38BB4F16C /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/Core/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		4C7B292A7D877DCA818E0F24D3891A22 /* NSImage+Compatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+Compatibility.m"; path = "SDWebImage/Core/NSImage+Compatibility.m"; sourceTree = "<group>"; };
+		4DBF455629023DF7F6CCFE32B0ABF7A3 /* spotifylogo-32@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "spotifylogo-32@3x.png"; path = "SpotifyLogin/Resources/spotifylogo-32@3x.png"; sourceTree = "<group>"; };
+		4E025EC25F06EC38086546FB30CD8F7C /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		4EA5DD8759A2E7E87FA244939E8CD143 /* SDWebImageCacheKeyFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCacheKeyFilter.h; path = SDWebImage/Core/SDWebImageCacheKeyFilter.h; sourceTree = "<group>"; };
+		5509E4DBFAD86CCB5C144A7A860CE589 /* SDImageCodersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCodersManager.h; path = SDWebImage/Core/SDImageCodersManager.h; sourceTree = "<group>"; };
+		5513D1B15AD6AA36E39874AE3257522D /* SDImageTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageTransformer.m; path = SDWebImage/Core/SDImageTransformer.m; sourceTree = "<group>"; };
+		5537730083604530537588679AF67C30 /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
+		55588C7C6960EB4E364DE9AF7E39F4BD /* Pods_spotify_home_objcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spotify_home_objcTests.framework; path = "Pods-spotify-home-objcTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		558E2AA7F6B3D11A7D156B435C98BA89 /* SDWebImageDownloaderConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderConfig.h; path = SDWebImage/Core/SDWebImageDownloaderConfig.h; sourceTree = "<group>"; };
+		5861B9E038844BBFEE0AFC148AA556E3 /* spotifylogo-32.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "spotifylogo-32.png"; path = "SpotifyLogin/Resources/spotifylogo-32.png"; sourceTree = "<group>"; };
+		5B541B1A40A9BCD43696B390F09C1521 /* Pods-spotify-home-objc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spotify-home-objc-umbrella.h"; sourceTree = "<group>"; };
+		5DC26AEDCEDEFE5E13ACD2694A3CA9DD /* SDAnimatedImageRep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageRep.h; path = SDWebImage/Core/SDAnimatedImageRep.h; sourceTree = "<group>"; };
+		5F018181E72F07D83CC72FB79E1BC69C /* SDImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGIFCoder.h; path = SDWebImage/Core/SDImageGIFCoder.h; sourceTree = "<group>"; };
+		61DAA1FA6F06288F5B31A9315879DB96 /* SDmetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDmetamacros.h; path = SDWebImage/Private/SDmetamacros.h; sourceTree = "<group>"; };
+		645D0AE483C4D98C1002B2B29ECED84B /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/Core/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		658D8C015DA10CCFAA592660B16A02A3 /* SDImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoder.m; path = SDWebImage/Core/SDImageCoder.m; sourceTree = "<group>"; };
+		65A485CDFADC2F40B44487EF3110BF8C /* SDWebImageCacheSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheSerializer.m; path = SDWebImage/Core/SDWebImageCacheSerializer.m; sourceTree = "<group>"; };
+		6EC6DBD89F2A7A10376D8F2A23849ABB /* SDWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWeakProxy.h; path = SDWebImage/Private/SDWeakProxy.h; sourceTree = "<group>"; };
+		6FAB954C003278AF76EAE9D98E1CB5A6 /* SDImageFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageFrame.h; path = SDWebImage/Core/SDImageFrame.h; sourceTree = "<group>"; };
+		70C0A171E3CF9B00A63BCCCF688C964C /* Pods-spotify-home-objc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spotify-home-objc.modulemap"; sourceTree = "<group>"; };
+		71B4B0773246FCBE124B526206B63F53 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/Core/SDWebImageManager.m; sourceTree = "<group>"; };
+		72C1B0A92F986223CC378C47F8B0D799 /* SessionLocalStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionLocalStorage.swift; path = Sources/Internal/SessionLocalStorage.swift; sourceTree = "<group>"; };
+		7458A52B903C39C9CFC9B6A9BDCC5B2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		75DC79468314FC5699792266154B92DC /* SpotifyLogin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpotifyLogin-umbrella.h"; sourceTree = "<group>"; };
+		7AFF6B26F73F64E71C8F5195BDF34CEC /* Pods-spotify-home-objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotify-home-objc.release.xcconfig"; sourceTree = "<group>"; };
+		7D0D03CCFD4D405AD6561950C4EBFBF2 /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/Core/SDWebImageDefine.m; sourceTree = "<group>"; };
+		7E3A7694CA40F2CAEABC345A310DC4D1 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/Core/SDWebImageOperation.h; sourceTree = "<group>"; };
+		812270965DB77A42C7DEF478FFC3986C /* UIImage+Transform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Transform.m"; path = "SDWebImage/Core/UIImage+Transform.m"; sourceTree = "<group>"; };
+		82DA3C06223B06E37E15B4A4B17F11D9 /* SDImageIOCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageIOCoder.m; path = SDWebImage/Core/SDImageIOCoder.m; sourceTree = "<group>"; };
+		83FDE9E5F256C6FAA8C1666430066946 /* SpotifyLogin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SpotifyLogin.modulemap; sourceTree = "<group>"; };
+		85D55A592D071BE3BD0BDAE1B20BDA66 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/Core/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		867746AFC610D7E04AFFA6647D4EBD09 /* SDImageCachesManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCachesManager.m; path = SDWebImage/Core/SDImageCachesManager.m; sourceTree = "<group>"; };
+		86B17D6ADC7DCEAEAD79C259B04D0D28 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/Core/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		8742558790C4AC1CFAAE2B7E526BDE44 /* UIImage+Metadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Metadata.m"; path = "SDWebImage/Core/UIImage+Metadata.m"; sourceTree = "<group>"; };
+		87EC8CFE81CB84F724097A73D59B1B72 /* SDImageAPNGCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoder.h; path = SDWebImage/Core/SDImageAPNGCoder.h; sourceTree = "<group>"; };
+		8BF704ACF121C3D46369ECFC79BBF436 /* SpotifyLogin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SpotifyLogin-dummy.m"; sourceTree = "<group>"; };
+		8F97CD730365F8CA866EB57D2042A3A5 /* Pods_spotify_home_objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spotify_home_objc.framework; path = "Pods-spotify-home-objc.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9138D8C55909E93618FBBD5BBD0672DF /* SDWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWeakProxy.m; path = SDWebImage/Private/SDWeakProxy.m; sourceTree = "<group>"; };
+		91D8A8D4051802DD3F88E893D47B7C41 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/Core/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		926B0EBC0944C0F68DFA539426CF1BEC /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		96B9C0AB4BC31B010CDEA6E173520DF8 /* UIImage+MemoryCacheCost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MemoryCacheCost.m"; path = "SDWebImage/Core/UIImage+MemoryCacheCost.m"; sourceTree = "<group>"; };
+		978D7232FE4041370B1DAAB80A4840DD /* SDImageCachesManagerOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCachesManagerOperation.m; path = SDWebImage/Private/SDImageCachesManagerOperation.m; sourceTree = "<group>"; };
+		97A57718C2907E30380F9809C18DEB88 /* NSButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSButton+WebCache.h"; path = "SDWebImage/Core/NSButton+WebCache.h"; sourceTree = "<group>"; };
+		9C2AA84167517F6973D0CF16C5498EF6 /* SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0A0E4889E4C42065DE0B91C9F68684F /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/Core/UIImage+GIF.m"; sourceTree = "<group>"; };
+		A223F375550E649F2AA8F9D2A7BF47F3 /* Pods-spotify-home-objc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotify-home-objc-Info.plist"; sourceTree = "<group>"; };
+		A4E5DE73FFD898CD29DC94988EB2EB0B /* Pods-spotify-home-objc-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spotify-home-objc-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A7895382947D302D0F6109AC7F574E1E /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/Core/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		A84F30F1AC05C036EF89002FF463BA7D /* Networking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Networking.swift; path = Sources/Internal/Networking.swift; sourceTree = "<group>"; };
+		A9EA8EB46FBB41A7583AD4694E643712 /* SpotifyLogin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SpotifyLogin-Info.plist"; sourceTree = "<group>"; };
+		AC5E40E5018180BACF2AE756B56FD404 /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/Core/UIView+WebCache.h"; sourceTree = "<group>"; };
+		AC652197D28B8BA80B4BD490760338EF /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/Core/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		AE1299921E834701489831BF76E06953 /* UIImage+MemoryCacheCost.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MemoryCacheCost.h"; path = "SDWebImage/Core/UIImage+MemoryCacheCost.h"; sourceTree = "<group>"; };
+		AE663F35AE9778099D6C71F345D38E0B /* SpotifyLogin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpotifyLogin-prefix.pch"; sourceTree = "<group>"; };
+		AF2AA46D57259A7B5E202568B795D100 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Sources/Internal/Session.swift; sourceTree = "<group>"; };
+		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B87E588B2579E5B86A10628F75BE9D /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/Core/SDAnimatedImageRep.m; sourceTree = "<group>"; };
+		B2066714BF3229D74845FCC87C14CFBF /* Pods-spotify-home-objcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotify-home-objcTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B346D06D281D4D3C396F9BBE3DBF0FFE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		B34E15B3A5158CC127866D4C7DE8BCEC /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/Core/UIView+WebCache.m"; sourceTree = "<group>"; };
+		B5188F0EE5F30EFD932C741900EE7691 /* SDDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDiskCache.m; path = SDWebImage/Core/SDDiskCache.m; sourceTree = "<group>"; };
+		B5ECDF678D89451FEA114916AF711292 /* NSBezierPath+RoundedCorners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+RoundedCorners.h"; path = "SDWebImage/Private/NSBezierPath+RoundedCorners.h"; sourceTree = "<group>"; };
+		B87B64B7919B8786F423164C812AB955 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/Core/UIImage+GIF.h"; sourceTree = "<group>"; };
+		B8877304546C4AFF379BA9010029264E /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/Core/SDImageCacheConfig.h; sourceTree = "<group>"; };
+		BCA16EB412185EDCC2954623D63FCD0D /* SDImageLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoader.h; path = SDWebImage/Core/SDImageLoader.h; sourceTree = "<group>"; };
+		BE12082F19D73231745BFC1EAC59B53A /* SpotifyLogin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpotifyLogin.h; path = SpotifyLogin/SpotifyLogin.h; sourceTree = "<group>"; };
+		C19E3D4BD2ADA71D794E818476D60A55 /* SDAnimatedImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SDAnimatedImageView+WebCache.m"; path = "SDWebImage/Core/SDAnimatedImageView+WebCache.m"; sourceTree = "<group>"; };
+		C1E3E11AE957371D442A432083368F4F /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/Core/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		C26F302F748FB19D376281FE83F59C22 /* SDImageCacheDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheDefine.h; path = SDWebImage/Core/SDImageCacheDefine.h; sourceTree = "<group>"; };
+		C874F58FCA88350393CC0A1DC9453C8C /* Pods-spotify-home-objc-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotify-home-objc-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA1A9DEF5E447B5A299D33DC45F227C4 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/Core/SDImageCache.m; sourceTree = "<group>"; };
+		CACF57E6A73C48F752C3F14102C5DC56 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/Core/SDWebImageManager.h; sourceTree = "<group>"; };
+		CBB540ECF1B5EC6CB08C1A6F54517302 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/Core/SDImageCacheConfig.m; sourceTree = "<group>"; };
+		CBC8F74D9DC17D579322C643DC81393B /* SDImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoderHelper.m; path = SDWebImage/Core/SDImageCoderHelper.m; sourceTree = "<group>"; };
+		CCDB652395C852E27A795395D61C572B /* SDImageCachesManagerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManagerOperation.h; path = SDWebImage/Private/SDImageCachesManagerOperation.h; sourceTree = "<group>"; };
+		CCE477600B397A6421C416A5BAF55284 /* SDImageFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageFrame.m; path = SDWebImage/Core/SDImageFrame.m; sourceTree = "<group>"; };
+		CD6C43AD0DD7544C25CC3E41D94A72DE /* SDWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImage.h; path = WebImage/SDWebImage.h; sourceTree = "<group>"; };
+		D46F889A565AF7F6058F33BF908B7DC1 /* SDWebImageIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageIndicator.m; path = SDWebImage/Core/SDWebImageIndicator.m; sourceTree = "<group>"; };
+		D4968E3D3F744D46EE95DFB8ECCE9FAD /* SDImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoder.h; path = SDWebImage/Core/SDImageCoder.h; sourceTree = "<group>"; };
+		D66B47CFED77958180187603473F2F00 /* SDImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCodersManager.m; path = SDWebImage/Core/SDImageCodersManager.m; sourceTree = "<group>"; };
+		D6D07DBACDD822C1B73B6FCC99C3D284 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/Core/SDWebImageCompat.h; sourceTree = "<group>"; };
+		D75675FE6982010E1F5054DAB97780B9 /* Scope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scope.swift; path = Sources/Scope.swift; sourceTree = "<group>"; };
+		D84968C2EAED1C3205702B5F9B9D507A /* SDWebImageDownloaderRequestModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderRequestModifier.m; path = SDWebImage/Core/SDWebImageDownloaderRequestModifier.m; sourceTree = "<group>"; };
+		D91F576B068D93D04F22643C0FD9471D /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/Core/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
+		DAB0973F969329AD384349D9CD6CB891 /* SDImageGraphics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGraphics.h; path = SDWebImage/Core/SDImageGraphics.h; sourceTree = "<group>"; };
+		DDA12E53B0E8B824D834E81550D84174 /* SDImageGIFCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGIFCoderInternal.h; path = SDWebImage/Private/SDImageGIFCoderInternal.h; sourceTree = "<group>"; };
+		DEFC483991BB1863AB59B23A572CF98F /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Sources/Internal/Constants.swift; sourceTree = "<group>"; };
+		DFD66E71013213BD5AB63702162FBB01 /* SpotifyLogin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpotifyLogin.swift; path = Sources/SpotifyLogin.swift; sourceTree = "<group>"; };
+		E186186F0BD42B42933A223ADC60E247 /* SDImageLoadersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoadersManager.h; path = SDWebImage/Core/SDImageLoadersManager.h; sourceTree = "<group>"; };
+		E1CEF202FC4AD65CAA6BF431CB5FE095 /* SDImageLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoader.m; path = SDWebImage/Core/SDImageLoader.m; sourceTree = "<group>"; };
+		E2D6ACC2777BA3AF957E64995EBCB291 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/Core/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		E45A7BB4B68591310A0E324A8373D7F1 /* SDAsyncBlockOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAsyncBlockOperation.h; path = SDWebImage/Private/SDAsyncBlockOperation.h; sourceTree = "<group>"; };
+		E6F3C78852A7B5EABA46D0FF8C776F11 /* Pods-spotify-home-objcTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotify-home-objcTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E824029E3EF7EA7F5E2D6C4FDFCA3497 /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/Core/SDWebImageTransition.h; sourceTree = "<group>"; };
+		E8362D756E96A4B4BC285A77C3DC0B78 /* SDImageAPNGCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAPNGCoder.m; path = SDWebImage/Core/SDImageAPNGCoder.m; sourceTree = "<group>"; };
+		E9E5348E970BEA7272A3E0D8E1A81109 /* SDAnimatedImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SDAnimatedImageView+WebCache.h"; path = "SDWebImage/Core/SDAnimatedImageView+WebCache.h"; sourceTree = "<group>"; };
+		EA10BD6E9C1B808C1EE4CF2645DE03EF /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/Core/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		EA43244EAA85BB5E692C74E58AA7E067 /* Pods-spotify-home-objcTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotify-home-objcTests-Info.plist"; sourceTree = "<group>"; };
+		EADC30F860A48B3BD6154AC59CAD1182 /* SDImageLoadersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoadersManager.m; path = SDWebImage/Core/SDImageLoadersManager.m; sourceTree = "<group>"; };
+		EB531D909D48E9F30ABA1006B7C67D06 /* SDWebImageTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageTransition.m; path = SDWebImage/Core/SDWebImageTransition.m; sourceTree = "<group>"; };
+		EBD09544116F91E37B9DCAF38F064CBB /* NSBezierPath+RoundedCorners.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+RoundedCorners.m"; path = "SDWebImage/Private/NSBezierPath+RoundedCorners.m"; sourceTree = "<group>"; };
+		EF71156CAC2EAD29ADFFD110DC4F46E1 /* SpotifyLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SpotifyLogin.framework; path = SpotifyLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F107DA5ED8E353A4F88A516F6E1E1604 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/Core/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		F1936E63B952417203979B8316AFDA6D /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/Core/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		F3A4F31E8792CD9651C368286F562770 /* SDAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageView.h; path = SDWebImage/Core/SDAnimatedImageView.h; sourceTree = "<group>"; };
+		F7F91E36929A545AED0B1F8A5E06F58C /* SDWebImageDownloaderConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderConfig.m; path = SDWebImage/Core/SDWebImageDownloaderConfig.m; sourceTree = "<group>"; };
+		F843EA37D394817529329609203CB07B /* Pods-spotify-home-objcTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spotify-home-objcTests-umbrella.h"; sourceTree = "<group>"; };
+		FA64477FB52FB6E6EEF1FD3845AB8137 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/Core/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		FBD5A21DAF2772529DA49274D5A1B317 /* SDWebImageError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageError.m; path = SDWebImage/Core/SDWebImageError.m; sourceTree = "<group>"; };
+		FC2CA9915884E13DB757387E67C915AF /* Pods-spotify-home-objcTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spotify-home-objcTests-dummy.m"; sourceTree = "<group>"; };
+		FEA5589486A0D20BD7952E1C683AF7FA /* SDMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDMemoryCache.h; path = SDWebImage/Core/SDMemoryCache.h; sourceTree = "<group>"; };
+		FFA6CEF8A5C6FD219B1FCA10D8F92558 /* SDImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGIFCoder.m; path = SDWebImage/Core/SDImageGIFCoder.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A4E6A8BDEA2C3D7EED6BBB28556A8EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7BC0998F116AC6C3DD0E63BE6351AFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4442F561EAD00FD27882AA847BA27FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E9947B0A2C94CE1764B784E5FA5455 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECB252CA6E9158BBDA779775063DC5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5837A12758AD1D32D8757786526FBD /* Foundation.framework in Frameworks */,
+				3A6F2FA629CA84DD6664EC40EAE4C2E7 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E642FD4F5F8C7DD1410726EDB98CA1E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5AC4C832B1529FB0BE47728E8136798 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8523EEFFCB852257853195B0820B4890 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E26A8EE6B0923371DA0DFFE18CF7E04 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				83FDE9E5F256C6FAA8C1666430066946 /* SpotifyLogin.modulemap */,
+				37EF30CB0994ECAA871DDBD6C3EBDDB2 /* SpotifyLogin.xcconfig */,
+				8BF704ACF121C3D46369ECFC79BBF436 /* SpotifyLogin-dummy.m */,
+				A9EA8EB46FBB41A7583AD4694E643712 /* SpotifyLogin-Info.plist */,
+				AE663F35AE9778099D6C71F345D38E0B /* SpotifyLogin-prefix.pch */,
+				75DC79468314FC5699792266154B92DC /* SpotifyLogin-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SpotifyLogin";
+			sourceTree = "<group>";
+		};
+		6B66866DD721F6568AC23BAD249FC154 /* Pods-spotify-home-objcTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F38761D268E4ECE3EF7D48D204E041C /* Pods-spotify-home-objcTests.modulemap */,
+				2AB5C3690B17E64FE10D057BC5032DA2 /* Pods-spotify-home-objcTests-acknowledgements.markdown */,
+				E6F3C78852A7B5EABA46D0FF8C776F11 /* Pods-spotify-home-objcTests-acknowledgements.plist */,
+				FC2CA9915884E13DB757387E67C915AF /* Pods-spotify-home-objcTests-dummy.m */,
+				EA43244EAA85BB5E692C74E58AA7E067 /* Pods-spotify-home-objcTests-Info.plist */,
+				F843EA37D394817529329609203CB07B /* Pods-spotify-home-objcTests-umbrella.h */,
+				B2066714BF3229D74845FCC87C14CFBF /* Pods-spotify-home-objcTests.debug.xcconfig */,
+				0457C5D44279A500ED5683359F3323D0 /* Pods-spotify-home-objcTests.release.xcconfig */,
+			);
+			name = "Pods-spotify-home-objcTests";
+			path = "Target Support Files/Pods-spotify-home-objcTests";
+			sourceTree = "<group>";
+		};
+		725401734C3F04A4DB3BEE5F7000A53B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F13CD17D25D68FFF98DB81A1D80DF2E9 /* SDWebImage */,
+				A073DF6A425C8118E81F5A8A81039264 /* SpotifyLogin */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D2F5506B533E410E4CCC678E2E2D94F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CFDB7263064E67A4C067751CDD3F9D1 /* SDWebImage.modulemap */,
+				5537730083604530537588679AF67C30 /* SDWebImage.xcconfig */,
+				926B0EBC0944C0F68DFA539426CF1BEC /* SDWebImage-dummy.m */,
+				0116A286C39D29155E7A175A1C337B62 /* SDWebImage-Info.plist */,
+				4E025EC25F06EC38086546FB30CD8F7C /* SDWebImage-prefix.pch */,
+				9C2AA84167517F6973D0CF16C5498EF6 /* SDWebImage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SDWebImage";
+			sourceTree = "<group>";
+		};
+		82EE0527C3116304EFAE0593E44270B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5861B9E038844BBFEE0AFC148AA556E3 /* spotifylogo-32.png */,
+				294FFB13C862A3200181873D17D7C459 /* spotifylogo-32@2x.png */,
+				4DBF455629023DF7F6CCFE32B0ABF7A3 /* spotifylogo-32@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8356888D78165FA673574C34E1D0DC7F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D25AC13DFDA6E89C9CC96FD8AAAB9539 /* Pods-spotify-home-objc */,
+				6B66866DD721F6568AC23BAD249FC154 /* Pods-spotify-home-objcTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8523EEFFCB852257853195B0820B4890 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7458A52B903C39C9CFC9B6A9BDCC5B2B /* Foundation.framework */,
+				B346D06D281D4D3C396F9BBE3DBF0FFE /* ImageIO.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A073DF6A425C8118E81F5A8A81039264 /* SpotifyLogin */ = {
+			isa = PBXGroup;
+			children = (
+				DEFC483991BB1863AB59B23A572CF98F /* Constants.swift */,
+				A84F30F1AC05C036EF89002FF463BA7D /* Networking.swift */,
+				28C5027A45B42603B08D5A06A62DF56C /* SafariDelegate.swift */,
+				D75675FE6982010E1F5054DAB97780B9 /* Scope.swift */,
+				AF2AA46D57259A7B5E202568B795D100 /* Session.swift */,
+				72C1B0A92F986223CC378C47F8B0D799 /* SessionLocalStorage.swift */,
+				BE12082F19D73231745BFC1EAC59B53A /* SpotifyLogin.h */,
+				DFD66E71013213BD5AB63702162FBB01 /* SpotifyLogin.swift */,
+				3F9A93306A90F3ADD1925D48253F9D7A /* SpotifyLoginButton.swift */,
+				15AEA11B70F8D935613B71F38679F795 /* SpotifyLoginPresenter.swift */,
+				18A60CA6F62CF05E070ADED9C8BE07D1 /* URLBuilder.swift */,
+				82EE0527C3116304EFAE0593E44270B8 /* Resources */,
+				3E26A8EE6B0923371DA0DFFE18CF7E04 /* Support Files */,
+			);
+			name = SpotifyLogin;
+			path = SpotifyLogin;
+			sourceTree = "<group>";
+		};
+		A429DE966FD09088CE267AEC145A6C87 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B5ECDF678D89451FEA114916AF711292 /* NSBezierPath+RoundedCorners.h */,
+				EBD09544116F91E37B9DCAF38F064CBB /* NSBezierPath+RoundedCorners.m */,
+				97A57718C2907E30380F9809C18DEB88 /* NSButton+WebCache.h */,
+				07173F21958B257F6A5DED22FA5362D5 /* NSButton+WebCache.m */,
+				E2D6ACC2777BA3AF957E64995EBCB291 /* NSData+ImageContentType.h */,
+				85D55A592D071BE3BD0BDAE1B20BDA66 /* NSData+ImageContentType.m */,
+				16BCCEE1CC7D6A180B8C01FDBCD62F78 /* NSImage+Compatibility.h */,
+				4C7B292A7D877DCA818E0F24D3891A22 /* NSImage+Compatibility.m */,
+				401A0541262BD989E014F2B8EA014B58 /* SDAnimatedImage.h */,
+				061551B8BF38BA1C2D58A4CD3435795E /* SDAnimatedImage.m */,
+				5DC26AEDCEDEFE5E13ACD2694A3CA9DD /* SDAnimatedImageRep.h */,
+				B0B87E588B2579E5B86A10628F75BE9D /* SDAnimatedImageRep.m */,
+				F3A4F31E8792CD9651C368286F562770 /* SDAnimatedImageView.h */,
+				308CFDFEAF5E740C06E3CC10965E68EB /* SDAnimatedImageView.m */,
+				E9E5348E970BEA7272A3E0D8E1A81109 /* SDAnimatedImageView+WebCache.h */,
+				C19E3D4BD2ADA71D794E818476D60A55 /* SDAnimatedImageView+WebCache.m */,
+				E45A7BB4B68591310A0E324A8373D7F1 /* SDAsyncBlockOperation.h */,
+				2305D9C7EF6BC315758A967D37CD9E31 /* SDAsyncBlockOperation.m */,
+				0E1E739757C3E6B025CC36CD27836428 /* SDDiskCache.h */,
+				B5188F0EE5F30EFD932C741900EE7691 /* SDDiskCache.m */,
+				87EC8CFE81CB84F724097A73D59B1B72 /* SDImageAPNGCoder.h */,
+				E8362D756E96A4B4BC285A77C3DC0B78 /* SDImageAPNGCoder.m */,
+				0B923778F4FD6DC6D505365DC79A6BA8 /* SDImageAPNGCoderInternal.h */,
+				2F6E0F35086681B0ECA719C3398273EF /* SDImageAssetManager.h */,
+				0F9716642ADD622FE9912436F37165BB /* SDImageAssetManager.m */,
+				0098CA78051FDAD08075D9C11B2CE635 /* SDImageCache.h */,
+				CA1A9DEF5E447B5A299D33DC45F227C4 /* SDImageCache.m */,
+				B8877304546C4AFF379BA9010029264E /* SDImageCacheConfig.h */,
+				CBB540ECF1B5EC6CB08C1A6F54517302 /* SDImageCacheConfig.m */,
+				C26F302F748FB19D376281FE83F59C22 /* SDImageCacheDefine.h */,
+				282C38DBB3B82FFEEDF7BC58797FE2A1 /* SDImageCacheDefine.m */,
+				3CD296E8675D7BEB72E53430ABC508A5 /* SDImageCachesManager.h */,
+				867746AFC610D7E04AFFA6647D4EBD09 /* SDImageCachesManager.m */,
+				CCDB652395C852E27A795395D61C572B /* SDImageCachesManagerOperation.h */,
+				978D7232FE4041370B1DAAB80A4840DD /* SDImageCachesManagerOperation.m */,
+				D4968E3D3F744D46EE95DFB8ECCE9FAD /* SDImageCoder.h */,
+				658D8C015DA10CCFAA592660B16A02A3 /* SDImageCoder.m */,
+				3E4D332580C3364B18417A8FC8A1359B /* SDImageCoderHelper.h */,
+				CBC8F74D9DC17D579322C643DC81393B /* SDImageCoderHelper.m */,
+				5509E4DBFAD86CCB5C144A7A860CE589 /* SDImageCodersManager.h */,
+				D66B47CFED77958180187603473F2F00 /* SDImageCodersManager.m */,
+				6FAB954C003278AF76EAE9D98E1CB5A6 /* SDImageFrame.h */,
+				CCE477600B397A6421C416A5BAF55284 /* SDImageFrame.m */,
+				5F018181E72F07D83CC72FB79E1BC69C /* SDImageGIFCoder.h */,
+				FFA6CEF8A5C6FD219B1FCA10D8F92558 /* SDImageGIFCoder.m */,
+				DDA12E53B0E8B824D834E81550D84174 /* SDImageGIFCoderInternal.h */,
+				DAB0973F969329AD384349D9CD6CB891 /* SDImageGraphics.h */,
+				48479FF2DFB537C1B5C4EA4ACFD5D599 /* SDImageGraphics.m */,
+				2EE6649DA7C958FD9B4DA370E6AFEF14 /* SDImageIOCoder.h */,
+				82DA3C06223B06E37E15B4A4B17F11D9 /* SDImageIOCoder.m */,
+				BCA16EB412185EDCC2954623D63FCD0D /* SDImageLoader.h */,
+				E1CEF202FC4AD65CAA6BF431CB5FE095 /* SDImageLoader.m */,
+				E186186F0BD42B42933A223ADC60E247 /* SDImageLoadersManager.h */,
+				EADC30F860A48B3BD6154AC59CAD1182 /* SDImageLoadersManager.m */,
+				49F370C75E22E99CCF23D261857AB20E /* SDImageTransformer.h */,
+				5513D1B15AD6AA36E39874AE3257522D /* SDImageTransformer.m */,
+				3AB71271BFAB3DE5279A91502A893242 /* SDInternalMacros.h */,
+				1B725FAA1849DE751FB1217A05B3D6C5 /* SDInternalMacros.m */,
+				FEA5589486A0D20BD7952E1C683AF7FA /* SDMemoryCache.h */,
+				352A5F6EA6AB68B4ACC5F884157B1A69 /* SDMemoryCache.m */,
+				61DAA1FA6F06288F5B31A9315879DB96 /* SDmetamacros.h */,
+				6EC6DBD89F2A7A10376D8F2A23849ABB /* SDWeakProxy.h */,
+				9138D8C55909E93618FBBD5BBD0672DF /* SDWeakProxy.m */,
+				CD6C43AD0DD7544C25CC3E41D94A72DE /* SDWebImage.h */,
+				4EA5DD8759A2E7E87FA244939E8CD143 /* SDWebImageCacheKeyFilter.h */,
+				48E6CBD9026AD2A421FF2DF98AD1E35F /* SDWebImageCacheKeyFilter.m */,
+				31109FB5CEBD1058F56B2A1AD6295D7E /* SDWebImageCacheSerializer.h */,
+				65A485CDFADC2F40B44487EF3110BF8C /* SDWebImageCacheSerializer.m */,
+				D6D07DBACDD822C1B73B6FCC99C3D284 /* SDWebImageCompat.h */,
+				12B6542FF37C93B471076698F3D2C1E7 /* SDWebImageCompat.m */,
+				2292976CA420FA65F1BD43A838B0F4EE /* SDWebImageDefine.h */,
+				7D0D03CCFD4D405AD6561950C4EBFBF2 /* SDWebImageDefine.m */,
+				1027A44051A7347DCDA02E1D3D471CCD /* SDWebImageDownloader.h */,
+				F107DA5ED8E353A4F88A516F6E1E1604 /* SDWebImageDownloader.m */,
+				558E2AA7F6B3D11A7D156B435C98BA89 /* SDWebImageDownloaderConfig.h */,
+				F7F91E36929A545AED0B1F8A5E06F58C /* SDWebImageDownloaderConfig.m */,
+				329AEB7C3432EF8F54E6D59618C4E676 /* SDWebImageDownloaderOperation.h */,
+				FA64477FB52FB6E6EEF1FD3845AB8137 /* SDWebImageDownloaderOperation.m */,
+				01057F81E45DB00FF5033DDEAD75065A /* SDWebImageDownloaderRequestModifier.h */,
+				D84968C2EAED1C3205702B5F9B9D507A /* SDWebImageDownloaderRequestModifier.m */,
+				2B0A7BE8AE4C333F1D5E39F1B83AC9E9 /* SDWebImageError.h */,
+				FBD5A21DAF2772529DA49274D5A1B317 /* SDWebImageError.m */,
+				25AD5D1F69E047A576A652A15BA51783 /* SDWebImageIndicator.h */,
+				D46F889A565AF7F6058F33BF908B7DC1 /* SDWebImageIndicator.m */,
+				CACF57E6A73C48F752C3F14102C5DC56 /* SDWebImageManager.h */,
+				71B4B0773246FCBE124B526206B63F53 /* SDWebImageManager.m */,
+				7E3A7694CA40F2CAEABC345A310DC4D1 /* SDWebImageOperation.h */,
+				3C8556ED8FE08B803A45476CF8D914FF /* SDWebImageOptionsProcessor.h */,
+				437BA23D22FD12C8D25847C043D66D16 /* SDWebImageOptionsProcessor.m */,
+				EA10BD6E9C1B808C1EE4CF2645DE03EF /* SDWebImagePrefetcher.h */,
+				86B17D6ADC7DCEAEAD79C259B04D0D28 /* SDWebImagePrefetcher.m */,
+				E824029E3EF7EA7F5E2D6C4FDFCA3497 /* SDWebImageTransition.h */,
+				EB531D909D48E9F30ABA1006B7C67D06 /* SDWebImageTransition.m */,
+				3A90534D10ED94F2EB78EF53A219A35E /* UIButton+WebCache.h */,
+				F1936E63B952417203979B8316AFDA6D /* UIButton+WebCache.m */,
+				25428B14C522228BBBBA890A8D2AAE56 /* UIColor+HexString.h */,
+				091952ABE0E17F453523277C6844A73F /* UIColor+HexString.m */,
+				D91F576B068D93D04F22643C0FD9471D /* UIImage+ForceDecode.h */,
+				2CFE7F64CDEFD84CFDE57FDAD034123E /* UIImage+ForceDecode.m */,
+				B87B64B7919B8786F423164C812AB955 /* UIImage+GIF.h */,
+				A0A0E4889E4C42065DE0B91C9F68684F /* UIImage+GIF.m */,
+				AE1299921E834701489831BF76E06953 /* UIImage+MemoryCacheCost.h */,
+				96B9C0AB4BC31B010CDEA6E173520DF8 /* UIImage+MemoryCacheCost.m */,
+				23A2FE7A9159117F38803B2CDDBE1934 /* UIImage+Metadata.h */,
+				8742558790C4AC1CFAAE2B7E526BDE44 /* UIImage+Metadata.m */,
+				AC652197D28B8BA80B4BD490760338EF /* UIImage+MultiFormat.h */,
+				28848FBBE0302C6B7C270F5D93EF1097 /* UIImage+MultiFormat.m */,
+				20989BC94B82127DC3E395D1C253CCCB /* UIImage+Transform.h */,
+				812270965DB77A42C7DEF478FFC3986C /* UIImage+Transform.m */,
+				A7895382947D302D0F6109AC7F574E1E /* UIImageView+HighlightedWebCache.h */,
+				C1E3E11AE957371D442A432083368F4F /* UIImageView+HighlightedWebCache.m */,
+				645D0AE483C4D98C1002B2B29ECED84B /* UIImageView+WebCache.h */,
+				91D8A8D4051802DD3F88E893D47B7C41 /* UIImageView+WebCache.m */,
+				AC5E40E5018180BACF2AE756B56FD404 /* UIView+WebCache.h */,
+				B34E15B3A5158CC127866D4C7DE8BCEC /* UIView+WebCache.m */,
+				4AD87652A2B36CDA2D1F99A38BB4F16C /* UIView+WebCacheOperation.h */,
+				0461C9BA22FC522BD6BFDF1668D90458 /* UIView+WebCacheOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				725401734C3F04A4DB3BEE5F7000A53B /* Pods */,
+				E3FD0D8120D58EF2C5A38A60616E1B72 /* Products */,
+				8356888D78165FA673574C34E1D0DC7F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D25AC13DFDA6E89C9CC96FD8AAAB9539 /* Pods-spotify-home-objc */ = {
+			isa = PBXGroup;
+			children = (
+				70C0A171E3CF9B00A63BCCCF688C964C /* Pods-spotify-home-objc.modulemap */,
+				A4E5DE73FFD898CD29DC94988EB2EB0B /* Pods-spotify-home-objc-acknowledgements.markdown */,
+				C874F58FCA88350393CC0A1DC9453C8C /* Pods-spotify-home-objc-acknowledgements.plist */,
+				4AB951A4FAEB6455C9FB54FCEB692F39 /* Pods-spotify-home-objc-dummy.m */,
+				32B2237AFD92F60844617591F137814B /* Pods-spotify-home-objc-frameworks.sh */,
+				A223F375550E649F2AA8F9D2A7BF47F3 /* Pods-spotify-home-objc-Info.plist */,
+				5B541B1A40A9BCD43696B390F09C1521 /* Pods-spotify-home-objc-umbrella.h */,
+				36271283A473830DDAF94DCED891C324 /* Pods-spotify-home-objc.debug.xcconfig */,
+				7AFF6B26F73F64E71C8F5195BDF34CEC /* Pods-spotify-home-objc.release.xcconfig */,
+			);
+			name = "Pods-spotify-home-objc";
+			path = "Target Support Files/Pods-spotify-home-objc";
+			sourceTree = "<group>";
+		};
+		E3FD0D8120D58EF2C5A38A60616E1B72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F97CD730365F8CA866EB57D2042A3A5 /* Pods_spotify_home_objc.framework */,
+				55588C7C6960EB4E364DE9AF7E39F4BD /* Pods_spotify_home_objcTests.framework */,
+				B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */,
+				EF71156CAC2EAD29ADFFD110DC4F46E1 /* SpotifyLogin.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F13CD17D25D68FFF98DB81A1D80DF2E9 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				A429DE966FD09088CE267AEC145A6C87 /* Core */,
+				7D2F5506B533E410E4CCC678E2E2D94F /* Support Files */,
+			);
+			name = SDWebImage;
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		12F656C11A5FB1C3B1EB4E9EEC7BF510 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CB49198B6272330A0E0A86606F8F9A /* Pods-spotify-home-objc-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19491DDCBE1DE9F00A209912060ACF27 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF232C4B870FF2F9F0A6EC0ED1F39EDF /* SpotifyLogin-umbrella.h in Headers */,
+				F84C432F6010D60D9FEEA7E3AA1D92BB /* SpotifyLogin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4345A90853E5949DF60E5E508A6D5CEC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE60E12AC3CED97CEAB505B11ED5A89 /* Pods-spotify-home-objcTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B7EE7B19FD09DEE2052B99558C95CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287306D6C2EFBD0E30FE51129ECD9635 /* NSBezierPath+RoundedCorners.h in Headers */,
+				409BAAA8D878BCF7EDEECC680C8CBD85 /* NSButton+WebCache.h in Headers */,
+				9ED155BD93723E75BEC4A1B2C0387484 /* NSData+ImageContentType.h in Headers */,
+				79A6247325B4AD1FC5209A8057CBFE07 /* NSImage+Compatibility.h in Headers */,
+				A812EA5FC87313116A927C755FB64F67 /* SDAnimatedImage.h in Headers */,
+				47B615AA404D2D3CE42B35C429F4CF2D /* SDAnimatedImageRep.h in Headers */,
+				A872FDD89569830657BED3734F87EDF8 /* SDAnimatedImageView+WebCache.h in Headers */,
+				D8D70C7BD87E490E130DFD97E79AF622 /* SDAnimatedImageView.h in Headers */,
+				B8ADEC7D13466298749407ACF5993194 /* SDAsyncBlockOperation.h in Headers */,
+				A5A8F03B1830E1C5A88F252855C1CE51 /* SDDiskCache.h in Headers */,
+				23407F228FA74447CFB4B9126845EF46 /* SDImageAPNGCoder.h in Headers */,
+				A0BD712651AEC37D846E16B00F055B68 /* SDImageAPNGCoderInternal.h in Headers */,
+				5A72CDBF2B0A3DB97064B76DC2209007 /* SDImageAssetManager.h in Headers */,
+				78A069F21AD2BECEE4EF6A9A9DE1726A /* SDImageCache.h in Headers */,
+				D3F69297617EAA03D45B491FCFA83117 /* SDImageCacheConfig.h in Headers */,
+				8D6BED16EEDED7F9957F53182FD4F3AE /* SDImageCacheDefine.h in Headers */,
+				D6352673D5457CEB2B4827EDAA8FA27F /* SDImageCachesManager.h in Headers */,
+				02F8E2E5F4ACC3C13DE0B030FBCE9024 /* SDImageCachesManagerOperation.h in Headers */,
+				75878CF6589FE26CBE01520B66BFF0DA /* SDImageCoder.h in Headers */,
+				8F72E184C79C81EB663817233AEED59C /* SDImageCoderHelper.h in Headers */,
+				B00293DAF19D784240BAF680FB060675 /* SDImageCodersManager.h in Headers */,
+				1B1F16A79705961E586AA513F2548B1C /* SDImageFrame.h in Headers */,
+				78756F8FB982BA5688284C0799AF5009 /* SDImageGIFCoder.h in Headers */,
+				B00812453F0B04B7F9395B7860994F21 /* SDImageGIFCoderInternal.h in Headers */,
+				8C395FA207585FE707480C8B140B6D29 /* SDImageGraphics.h in Headers */,
+				495930CB82747409F31DFB0759BAD359 /* SDImageIOCoder.h in Headers */,
+				420F46F148A06FFBCAF54E8C9D3AFA2B /* SDImageLoader.h in Headers */,
+				89B799AE61733236B6080350BFE6618B /* SDImageLoadersManager.h in Headers */,
+				009A0E638DA97847A77154067CF3F612 /* SDImageTransformer.h in Headers */,
+				0E36EA5C7618E8E08476894A051BD4AA /* SDInternalMacros.h in Headers */,
+				B7C83123773CD621C3CDDF923F26DF62 /* SDMemoryCache.h in Headers */,
+				E3F64365EC33CA98293FC9F28AAF1288 /* SDmetamacros.h in Headers */,
+				63A83127EE2B6ED3717FD235D0996789 /* SDWeakProxy.h in Headers */,
+				3627AF54F9F4F05EA2C1B0D08A56229E /* SDWebImage-umbrella.h in Headers */,
+				01C143613DC7EE0E71276E3F65564D76 /* SDWebImage.h in Headers */,
+				727981988B1FE5AAF1A6AC51BE893EAF /* SDWebImageCacheKeyFilter.h in Headers */,
+				716AE33E697433F85447D67CF60530D7 /* SDWebImageCacheSerializer.h in Headers */,
+				561A7221B1DDAAF4C51B02312A9E46A4 /* SDWebImageCompat.h in Headers */,
+				843489CD3E003F538C84DEB84175B5FE /* SDWebImageDefine.h in Headers */,
+				00FC105008881A029801214905EF880E /* SDWebImageDownloader.h in Headers */,
+				B17950DE21C6D7EC7B922CC794716F16 /* SDWebImageDownloaderConfig.h in Headers */,
+				E5BCFB8A46AD0A3ED56126DE8E0EFEFB /* SDWebImageDownloaderOperation.h in Headers */,
+				9F85D502C11E667EB4ECAF6BEFE6385B /* SDWebImageDownloaderRequestModifier.h in Headers */,
+				10C82A7C0264253E17B240F2B7B65EB0 /* SDWebImageError.h in Headers */,
+				D973CC48A6FD2414A837058322710CAB /* SDWebImageIndicator.h in Headers */,
+				1B72CDEDFC297AB1BD12B988376CBA69 /* SDWebImageManager.h in Headers */,
+				DF63C07AA385E2B74B816ADDA692A301 /* SDWebImageOperation.h in Headers */,
+				068B930AACCBE8A3F1490AD617B94854 /* SDWebImageOptionsProcessor.h in Headers */,
+				CBA6A78DAC794EA36141870A0D423E94 /* SDWebImagePrefetcher.h in Headers */,
+				9CE4A275270DD253A530548AC7B40332 /* SDWebImageTransition.h in Headers */,
+				58D8C27862BC6F529079213790882C34 /* UIButton+WebCache.h in Headers */,
+				8864C7CC00E9A712A359EF511F74BFF1 /* UIColor+HexString.h in Headers */,
+				A60EF43F1A12A2746195C8C9E52856C2 /* UIImage+ForceDecode.h in Headers */,
+				F2A548F95FAEFDEE91655198BDA130F9 /* UIImage+GIF.h in Headers */,
+				8B49F9C1EA9DDB6A64AA21CC788FFB6A /* UIImage+MemoryCacheCost.h in Headers */,
+				0888FB1290E672D40674182BE1C4691F /* UIImage+Metadata.h in Headers */,
+				9BBA7039E6125618A8AE1E855840B9C9 /* UIImage+MultiFormat.h in Headers */,
+				08757A03D1D4C7B35E41BE00AEEE05E4 /* UIImage+Transform.h in Headers */,
+				92EC6F2DEA3A1DD9E3E9933CF26E2BF4 /* UIImageView+HighlightedWebCache.h in Headers */,
+				38DAE9E1030EB98F739DE5048FBC2DBD /* UIImageView+WebCache.h in Headers */,
+				83CE2EC2C1F3ED6E42E50E3692D71CEE /* UIView+WebCache.h in Headers */,
+				B155ACE2A9BC477405A9C7E95DBB1308 /* UIView+WebCacheOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		175C672A53F726F738122E3952ACB5B3 /* Pods-spotify-home-objcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BE3C3361ABD311712DD0B3F43F0803 /* Build configuration list for PBXNativeTarget "Pods-spotify-home-objcTests" */;
+			buildPhases = (
+				4345A90853E5949DF60E5E508A6D5CEC /* Headers */,
+				C436CF93DB63A65979113A2B7B47AA63 /* Sources */,
+				4442F561EAD00FD27882AA847BA27FB3 /* Frameworks */,
+				3DDDE82FFAD94641702BB2FA0C76FF6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B81557867A2F2DF2A380D10AB1EDB095 /* PBXTargetDependency */,
+			);
+			name = "Pods-spotify-home-objcTests";
+			productName = "Pods-spotify-home-objcTests";
+			productReference = 55588C7C6960EB4E364DE9AF7E39F4BD /* Pods_spotify_home_objcTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3847153A6E5EEFB86565BA840768F429 /* SDWebImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBE0C2489326DC105EA4E679EDC01AA4 /* Build configuration list for PBXNativeTarget "SDWebImage" */;
+			buildPhases = (
+				70B7EE7B19FD09DEE2052B99558C95CE /* Headers */,
+				E63FC44E0F59996E87A0B33DC0E01361 /* Sources */,
+				CECB252CA6E9158BBDA779775063DC5E /* Frameworks */,
+				F4216A76154085830AD7682398EAE817 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDWebImage;
+			productName = SDWebImage;
+			productReference = B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		96D928A4A6B8053A24C671D96BC6B52B /* Pods-spotify-home-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8D3A264B83B85EFEDD17ED40A96329 /* Build configuration list for PBXNativeTarget "Pods-spotify-home-objc" */;
+			buildPhases = (
+				12F656C11A5FB1C3B1EB4E9EEC7BF510 /* Headers */,
+				56503E8DFEF90160E9D60EFA8CDE4AF8 /* Sources */,
+				E642FD4F5F8C7DD1410726EDB98CA1E8 /* Frameworks */,
+				57BF308AFA37831F824F1B82D954B756 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8D348F3BD549B7D490D2CF33C49B9BD /* PBXTargetDependency */,
+				F30F6462F73454D448E76B0CEC28FCC9 /* PBXTargetDependency */,
+			);
+			name = "Pods-spotify-home-objc";
+			productName = "Pods-spotify-home-objc";
+			productReference = 8F97CD730365F8CA866EB57D2042A3A5 /* Pods_spotify_home_objc.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3EF3F58964FDE51A71B36344F566F9B /* SpotifyLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38B630A7187E461BD8B75EE1B30D78F9 /* Build configuration list for PBXNativeTarget "SpotifyLogin" */;
+			buildPhases = (
+				19491DDCBE1DE9F00A209912060ACF27 /* Headers */,
+				A78484DA5273CC1434B7A466998E9E1E /* Sources */,
+				1A4E6A8BDEA2C3D7EED6BBB28556A8EB /* Frameworks */,
+				4FDB36D5CAB36845CEC579F3BC326F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotifyLogin;
+			productName = SpotifyLogin;
+			productReference = EF71156CAC2EAD29ADFFD110DC4F46E1 /* SpotifyLogin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E3FD0D8120D58EF2C5A38A60616E1B72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96D928A4A6B8053A24C671D96BC6B52B /* Pods-spotify-home-objc */,
+				175C672A53F726F738122E3952ACB5B3 /* Pods-spotify-home-objcTests */,
+				3847153A6E5EEFB86565BA840768F429 /* SDWebImage */,
+				C3EF3F58964FDE51A71B36344F566F9B /* SpotifyLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DDDE82FFAD94641702BB2FA0C76FF6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FDB36D5CAB36845CEC579F3BC326F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD993DEADBBBF9B934934C852B28C118 /* spotifylogo-32.png in Resources */,
+				4EA435E0385E273CAE57F8984F533361 /* spotifylogo-32@2x.png in Resources */,
+				CDA3B99F37D90CDE687A444826D50622 /* spotifylogo-32@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57BF308AFA37831F824F1B82D954B756 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4216A76154085830AD7682398EAE817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56503E8DFEF90160E9D60EFA8CDE4AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712D4B7DA8EF586CAE027BC47C61BF97 /* Pods-spotify-home-objc-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A78484DA5273CC1434B7A466998E9E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6E5145ADD4B2E13476D209C28C935F /* Constants.swift in Sources */,
+				FB30A55401B78BE1C682E40A3C4F81DF /* Networking.swift in Sources */,
+				B65D445DBBFC21A569ECCAED7AA1D81B /* SafariDelegate.swift in Sources */,
+				760C6088A78D44576FBEFC7BE5D29D24 /* Scope.swift in Sources */,
+				3CF4CDBA30FDEFE44484F65ECB765B6A /* Session.swift in Sources */,
+				5BD42A57C5E0B2FB9A50CD69D4327084 /* SessionLocalStorage.swift in Sources */,
+				999875B9100EBDCFAEBDA20F5DAC8913 /* SpotifyLogin-dummy.m in Sources */,
+				D421A6C52D31905BFD0446659AA1CF6D /* SpotifyLogin.swift in Sources */,
+				7B8FA437539B67696F939A2F88DFF71D /* SpotifyLoginButton.swift in Sources */,
+				436455B287A50944F60BAB699E02C75D /* SpotifyLoginPresenter.swift in Sources */,
+				02AEED865D2144E99A2ED4AFEFBDD0EB /* URLBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C436CF93DB63A65979113A2B7B47AA63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DCC57D2FABF30729A92622A65B63E0 /* Pods-spotify-home-objcTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63FC44E0F59996E87A0B33DC0E01361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1AC285B434673B1DC3E58D271656A4 /* NSBezierPath+RoundedCorners.m in Sources */,
+				D1B868E31F11B9A0401A293A66EE9743 /* NSButton+WebCache.m in Sources */,
+				6B489A61A6992138C20E0835EE0C1756 /* NSData+ImageContentType.m in Sources */,
+				CE0383FA23229982264DE1C62FD058B5 /* NSImage+Compatibility.m in Sources */,
+				D2D57C8ABBA316C82133762EC0BFF9DA /* SDAnimatedImage.m in Sources */,
+				1006095946E4109383F7048CA5F72D2C /* SDAnimatedImageRep.m in Sources */,
+				0F485A7BB700908C8E673FF1EC81FB81 /* SDAnimatedImageView+WebCache.m in Sources */,
+				426943C9B9BF23DD6AC275EC5DA25A4E /* SDAnimatedImageView.m in Sources */,
+				9F921CF7A638EC34BE56202F53DBE372 /* SDAsyncBlockOperation.m in Sources */,
+				F9687893E17A4489CC756C1669CB8781 /* SDDiskCache.m in Sources */,
+				41CE5B8CC347502628D4DCA9D9E51A26 /* SDImageAPNGCoder.m in Sources */,
+				F1B84F94963410C8853E35E1B5D1305D /* SDImageAssetManager.m in Sources */,
+				80AB399C91AAC70B2E707D8DE308B4C2 /* SDImageCache.m in Sources */,
+				AE24835A134B49B50F4C17AB5F7D792E /* SDImageCacheConfig.m in Sources */,
+				EABBCA8480DDAE4C07EA4F5B48A39264 /* SDImageCacheDefine.m in Sources */,
+				DDA3E1BC9E49D518F892049CFE3DCE4D /* SDImageCachesManager.m in Sources */,
+				07D4E644D9A17811A15DD5F40E6C2B31 /* SDImageCachesManagerOperation.m in Sources */,
+				B565FB9D00DE0DD8E3B5793F284A34A3 /* SDImageCoder.m in Sources */,
+				1FB1C27C9F9793C1A5316B78EB718558 /* SDImageCoderHelper.m in Sources */,
+				0FC7CDB5539F0298FB21E260ECBA7036 /* SDImageCodersManager.m in Sources */,
+				C7450F2B1834C941A4422881B96C82EC /* SDImageFrame.m in Sources */,
+				873F6DC709FBB5485DDD640BEC2D74DD /* SDImageGIFCoder.m in Sources */,
+				1B94D8A5E2CB45B05766B016D074D8BE /* SDImageGraphics.m in Sources */,
+				B9D2E795C80EEB4A584277371D079C5F /* SDImageIOCoder.m in Sources */,
+				885879472586E737F6B296421DB819CB /* SDImageLoader.m in Sources */,
+				DE06865B937DF75D3E8F26F9302F8F21 /* SDImageLoadersManager.m in Sources */,
+				8BC61D6A369C14EE764365B7113351DC /* SDImageTransformer.m in Sources */,
+				3FB61873B741F363DDC4395D3A4BF1F6 /* SDInternalMacros.m in Sources */,
+				AA5C18B0661A78C0355A69CBFB199F73 /* SDMemoryCache.m in Sources */,
+				C1335BA5328E2A24E935F2FA21927E92 /* SDWeakProxy.m in Sources */,
+				7CA70761B0E9AB0E2D790DA2815CDD0B /* SDWebImage-dummy.m in Sources */,
+				EBB0868CBE28A4147CB8F759C3F4B4C4 /* SDWebImageCacheKeyFilter.m in Sources */,
+				7D4FE7F60163AE64FC64E382D8B28BEA /* SDWebImageCacheSerializer.m in Sources */,
+				360C95C504D849F1070C6A8917E42569 /* SDWebImageCompat.m in Sources */,
+				115DC8778F05479BC45808CA82D04B8B /* SDWebImageDefine.m in Sources */,
+				F17A0D595C436A7160D3F2D568B68A5A /* SDWebImageDownloader.m in Sources */,
+				3B5B203FB631A824440D2AF185B7061A /* SDWebImageDownloaderConfig.m in Sources */,
+				89FBD2D99FE4287B13EE802AF92FB0C8 /* SDWebImageDownloaderOperation.m in Sources */,
+				93E57CD9B6819410169512AD1C431F23 /* SDWebImageDownloaderRequestModifier.m in Sources */,
+				0B43D1309D55F7D79ADB49B583DB5AE4 /* SDWebImageError.m in Sources */,
+				0FD6E4302675A838EAF83B94430CC071 /* SDWebImageIndicator.m in Sources */,
+				336204CF75A0B095E8882C3101B1584B /* SDWebImageManager.m in Sources */,
+				7351DEEC4D3F46EA31815C513745E218 /* SDWebImageOptionsProcessor.m in Sources */,
+				8B404F1FB37183509CDB526E5B96887C /* SDWebImagePrefetcher.m in Sources */,
+				F239CDF6415D66A434BB274F0AA5FDA1 /* SDWebImageTransition.m in Sources */,
+				063FFBDC016F24C0572699BC375BD549 /* UIButton+WebCache.m in Sources */,
+				979E6B019379742543A3D5F6765DE879 /* UIColor+HexString.m in Sources */,
+				CC9E4F4D617750F97C966C812B9B274E /* UIImage+ForceDecode.m in Sources */,
+				CA8798A921771A9435C5BA3C497C9B97 /* UIImage+GIF.m in Sources */,
+				7B38FD33536C9F1CFC7E5F6B4FDFD6F3 /* UIImage+MemoryCacheCost.m in Sources */,
+				B85DC7FE0E61C9267390EF4B2D141EE8 /* UIImage+Metadata.m in Sources */,
+				B132C8F13FA0737007EFDA028117E8ED /* UIImage+MultiFormat.m in Sources */,
+				0627C55B3354C286BF0B3ACA34834686 /* UIImage+Transform.m in Sources */,
+				A4F4E855F9748F665FBA6F684D094290 /* UIImageView+HighlightedWebCache.m in Sources */,
+				7280165969E68B5EEA95D04CD8CDEE7C /* UIImageView+WebCache.m in Sources */,
+				C399A6C92E3675C22DEEFB6B44533E01 /* UIView+WebCache.m in Sources */,
+				10A28642AC238051087363EFA4201876 /* UIView+WebCacheOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B81557867A2F2DF2A380D10AB1EDB095 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-spotify-home-objc";
+			target = 96D928A4A6B8053A24C671D96BC6B52B /* Pods-spotify-home-objc */;
+			targetProxy = DEFE193B60F36D9D639DC8035A8947C9 /* PBXContainerItemProxy */;
+		};
+		B8D348F3BD549B7D490D2CF33C49B9BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
+			targetProxy = 3CBFA8091D43976B929F029CC2F95157 /* PBXContainerItemProxy */;
+		};
+		F30F6462F73454D448E76B0CEC28FCC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SpotifyLogin;
+			target = C3EF3F58964FDE51A71B36344F566F9B /* SpotifyLogin */;
+			targetProxy = EFDF28D262B05AAF6A23E5AA0493FC17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		212F2DA08B7954E7691F30898F46E5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5537730083604530537588679AF67C30 /* SDWebImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDWebImage/SDWebImage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
+				PRODUCT_MODULE_NAME = SDWebImage;
+				PRODUCT_NAME = SDWebImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		550FB946DDE0D636AD3F340AA882871B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36271283A473830DDAF94DCED891C324 /* Pods-spotify-home-objc.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-spotify-home-objc/Pods-spotify-home-objc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-spotify-home-objc/Pods-spotify-home-objc.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		644438C403F11052DFB726FBFCA68EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFF6B26F73F64E71C8F5195BDF34CEC /* Pods-spotify-home-objc.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-spotify-home-objc/Pods-spotify-home-objc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-spotify-home-objc/Pods-spotify-home-objc.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6D8148BF34076F0461CD19040BC4F09D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37EF30CB0994ECAA871DDBD6C3EBDDB2 /* SpotifyLogin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SpotifyLogin/SpotifyLogin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SpotifyLogin/SpotifyLogin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SpotifyLogin/SpotifyLogin.modulemap";
+				PRODUCT_MODULE_NAME = SpotifyLogin;
+				PRODUCT_NAME = SpotifyLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9A15A459A2B1F08E5EA2DFFD6CDF3B29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5537730083604530537588679AF67C30 /* SDWebImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDWebImage/SDWebImage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
+				PRODUCT_MODULE_NAME = SDWebImage;
+				PRODUCT_NAME = SDWebImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9F769BF77DCD0B7C3403818EAA6EA09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37EF30CB0994ECAA871DDBD6C3EBDDB2 /* SpotifyLogin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SpotifyLogin/SpotifyLogin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SpotifyLogin/SpotifyLogin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SpotifyLogin/SpotifyLogin.modulemap";
+				PRODUCT_MODULE_NAME = SpotifyLogin;
+				PRODUCT_NAME = SpotifyLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C584643150434FF1AA9BE6DF3A789BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2066714BF3229D74845FCC87C14CFBF /* Pods-spotify-home-objcTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-spotify-home-objcTests/Pods-spotify-home-objcTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-spotify-home-objcTests/Pods-spotify-home-objcTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D775F6867C34EC38110D285FDA1A7ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0457C5D44279A500ED5683359F3323D0 /* Pods-spotify-home-objcTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-spotify-home-objcTests/Pods-spotify-home-objcTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-spotify-home-objcTests/Pods-spotify-home-objcTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01BE3C3361ABD311712DD0B3F43F0803 /* Build configuration list for PBXNativeTarget "Pods-spotify-home-objcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C584643150434FF1AA9BE6DF3A789BCA /* Debug */,
+				D775F6867C34EC38110D285FDA1A7ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38B630A7187E461BD8B75EE1B30D78F9 /* Build configuration list for PBXNativeTarget "SpotifyLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F769BF77DCD0B7C3403818EAA6EA09 /* Debug */,
+				6D8148BF34076F0461CD19040BC4F09D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */,
+				7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBE0C2489326DC105EA4E679EDC01AA4 /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				212F2DA08B7954E7691F30898F46E5E8 /* Debug */,
+				9A15A459A2B1F08E5EA2DFFD6CDF3B29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8D3A264B83B85EFEDD17ED40A96329 /* Build configuration list for PBXNativeTarget "Pods-spotify-home-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				550FB946DDE0D636AD3F340AA882871B /* Debug */,
+				644438C403F11052DFB726FBFCA68EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

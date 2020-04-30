@@ -1,0 +1,22 @@
+PODS:
+  - SDWebImage (5.1.0):
+    - SDWebImage/Core (= 5.1.0)
+  - SDWebImage/Core (5.1.0)
+  - SpotifyLogin (0.1.6)
+
+DEPENDENCIES:
+  - SDWebImage
+  - SpotifyLogin (~> 0.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SDWebImage
+    - SpotifyLogin
+
+SPEC CHECKSUMS:
+  SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
+  SpotifyLogin: 9cdf82ff13e5f37e5ddc7fd07cf9793a9ebd1124
+
+PODFILE CHECKSUM: 254d39ed4cd7c7b07c037f02fcce3e56b56276b2
+
+COCOAPODS: 1.8.4

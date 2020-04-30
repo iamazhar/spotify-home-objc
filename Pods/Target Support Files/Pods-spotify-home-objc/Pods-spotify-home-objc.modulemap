@@ -1,0 +1,6 @@
+framework module Pods_spotify_home_objc {
+  umbrella header "Pods-spotify-home-objc-umbrella.h"
+
+  export *
+  module * { export * }
+}

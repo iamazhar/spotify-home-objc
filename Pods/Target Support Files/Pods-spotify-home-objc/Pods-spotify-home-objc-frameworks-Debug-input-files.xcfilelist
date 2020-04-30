@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-spotify-home-objc/Pods-spotify-home-objc-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SpotifyLogin/SpotifyLogin.framework
