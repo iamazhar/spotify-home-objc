@@ -11,6 +11,10 @@
 		E67D7EA3E3EC99571EE9C950 /* Pods_spotify_home_objc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBF25A85421B01F2089E632 /* Pods_spotify_home_objc.framework */; };
 		FF164AF8245C3B2D00536236 /* UIView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF164AF7245C3B2D00536236 /* UIView+Extensions.m */; };
 		FF164AFB245C3CBC00536236 /* AnchoredConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = FF164AFA245C3CBC00536236 /* AnchoredConstraints.m */; };
+		FF164B00245C51A500536236 /* SPTItemCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF164AFF245C51A500536236 /* SPTItemCellCollectionViewCell.m */; };
+		FF164B03245C650A00536236 /* MediaItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF164B02245C650A00536236 /* MediaItemView.m */; };
+		FF164B07245C686C00536236 /* UIColor+BrandColors.m in Sources */ = {isa = PBXBuildFile; fileRef = FF164B06245C686C00536236 /* UIColor+BrandColors.m */; };
+		FF164B0C245C71EA00536236 /* HomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF164B0A245C71EA00536236 /* HomeTableView.m */; };
 		FF2E11A5245B1154008A2DA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2E11A4245B1154008A2DA2 /* AppDelegate.m */; };
 		FF2E11A8245B1154008A2DA2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2E11A7245B1154008A2DA2 /* SceneDelegate.m */; };
 		FF2E11B0245B1155008A2DA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2E11AF245B1155008A2DA2 /* Assets.xcassets */; };
@@ -45,6 +49,14 @@
 		FF164AF7245C3B2D00536236 /* UIView+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extensions.m"; sourceTree = "<group>"; };
 		FF164AF9245C3CBC00536236 /* AnchoredConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnchoredConstraints.h; sourceTree = "<group>"; };
 		FF164AFA245C3CBC00536236 /* AnchoredConstraints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnchoredConstraints.m; sourceTree = "<group>"; };
+		FF164AFE245C51A500536236 /* SPTItemCellCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPTItemCellCollectionViewCell.h; sourceTree = "<group>"; };
+		FF164AFF245C51A500536236 /* SPTItemCellCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPTItemCellCollectionViewCell.m; sourceTree = "<group>"; };
+		FF164B01245C650A00536236 /* MediaItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaItemView.h; sourceTree = "<group>"; };
+		FF164B02245C650A00536236 /* MediaItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaItemView.m; sourceTree = "<group>"; };
+		FF164B05245C686C00536236 /* UIColor+BrandColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BrandColors.h"; sourceTree = "<group>"; };
+		FF164B06245C686C00536236 /* UIColor+BrandColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BrandColors.m"; sourceTree = "<group>"; };
+		FF164B0A245C71EA00536236 /* HomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableView.m; sourceTree = "<group>"; };
+		FF164B0B245C71EA00536236 /* HomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableView.h; sourceTree = "<group>"; };
 		FF2E11A0245B1154008A2DA2 /* spotify-home-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spotify-home-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2E11A3245B1154008A2DA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF2E11A4245B1154008A2DA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +133,60 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		FF164AFC245C518B00536236 /* Design_System */ = {
+			isa = PBXGroup;
+			children = (
+				FF164B04245C685F00536236 /* Colors */,
+				FF164AFD245C519500536236 /* Components */,
+			);
+			path = Design_System;
+			sourceTree = "<group>";
+		};
+		FF164AFD245C519500536236 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FF164AFE245C51A500536236 /* SPTItemCellCollectionViewCell.h */,
+				FF164AFF245C51A500536236 /* SPTItemCellCollectionViewCell.m */,
+				FF164B01245C650A00536236 /* MediaItemView.h */,
+				FF164B02245C650A00536236 /* MediaItemView.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FF164B04245C685F00536236 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				FF164B05245C686C00536236 /* UIColor+BrandColors.h */,
+				FF164B06245C686C00536236 /* UIColor+BrandColors.m */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		FF164B08245C71D000536236 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF164B09245C71D400536236 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF164B09245C71D400536236 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FF164B0D245C71F000536236 /* Cell */,
+				FF164B0B245C71EA00536236 /* HomeTableView.h */,
+				FF164B0A245C71EA00536236 /* HomeTableView.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		FF164B0D245C71F000536236 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		FF2E1197245B1154008A2DA2 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +210,8 @@
 		FF2E11A2245B1154008A2DA2 /* spotify-home-objc */ = {
 			isa = PBXGroup;
 			children = (
+				FF164B08245C71D000536236 /* Views */,
+				FF164AFC245C518B00536236 /* Design_System */,
 				FF164AF5245C3B1000536236 /* Extensions */,
 				FFC3BC6B245B1DFB00C6E7CF /* Common */,
 				FF2E11CF245B1540008A2DA2 /* Models */,
@@ -368,9 +436,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF164B0C245C71EA00536236 /* HomeTableView.m in Sources */,
 				FF164AFB245C3CBC00536236 /* AnchoredConstraints.m in Sources */,
+				FF164B07245C686C00536236 /* UIColor+BrandColors.m in Sources */,
+				FF164B00245C51A500536236 /* SPTItemCellCollectionViewCell.m in Sources */,
 				FFC3BC64245B19F100C6E7CF /* Track.m in Sources */,
 				FF2E11A5245B1154008A2DA2 /* AppDelegate.m in Sources */,
+				FF164B03245C650A00536236 /* MediaItemView.m in Sources */,
 				FFC3BC6E245B1E0900C6E7CF /* Common.m in Sources */,
 				FF2E11B6245B1155008A2DA2 /* main.m in Sources */,
 				FF164AF8245C3B2D00536236 /* UIView+Extensions.m in Sources */,
