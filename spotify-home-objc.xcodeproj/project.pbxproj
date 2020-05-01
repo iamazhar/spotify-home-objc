@@ -9,18 +9,19 @@
 /* Begin PBXBuildFile section */
 		B5E2F4CFAF3154F49F6846C7 /* Pods_spotify_home_objcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2893B5E33148F5A1F8C8922 /* Pods_spotify_home_objcTests.framework */; };
 		E67D7EA3E3EC99571EE9C950 /* Pods_spotify_home_objc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBF25A85421B01F2089E632 /* Pods_spotify_home_objc.framework */; };
+		FF164AF8245C3B2D00536236 /* UIView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF164AF7245C3B2D00536236 /* UIView+Extensions.m */; };
+		FF164AFB245C3CBC00536236 /* AnchoredConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = FF164AFA245C3CBC00536236 /* AnchoredConstraints.m */; };
 		FF2E11A5245B1154008A2DA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2E11A4245B1154008A2DA2 /* AppDelegate.m */; };
 		FF2E11A8245B1154008A2DA2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2E11A7245B1154008A2DA2 /* SceneDelegate.m */; };
 		FF2E11B0245B1155008A2DA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2E11AF245B1155008A2DA2 /* Assets.xcassets */; };
 		FF2E11B3245B1155008A2DA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2E11B1245B1155008A2DA2 /* LaunchScreen.storyboard */; };
 		FF2E11B6245B1155008A2DA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2E11B5245B1155008A2DA2 /* main.m */; };
 		FF2E11C0245B1155008A2DA2 /* spotify_home_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2E11BF245B1155008A2DA2 /* spotify_home_objcTests.m */; };
-		FF2E11CC245B14A9008A2DA2 /* SpotifyLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E11CB245B14A9008A2DA2 /* SpotifyLoginService.swift */; };
-		FFC3BC5E245B169600C6E7CF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC5D245B169500C6E7CF /* Client.swift */; };
 		FFC3BC61245B18CD00C6E7CF /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC60245B18CD00C6E7CF /* Artist.m */; };
 		FFC3BC64245B19F100C6E7CF /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC63245B19F100C6E7CF /* Track.m */; };
 		FFC3BC67245B1B0A00C6E7CF /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC66245B1B0A00C6E7CF /* Album.m */; };
 		FFC3BC6A245B1BCA00C6E7CF /* ItemImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC69245B1BCA00C6E7CF /* ItemImage.m */; };
+		FFC3BC6E245B1E0900C6E7CF /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC6D245B1E0900C6E7CF /* Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,10 @@
 		C97313F86BB47C0D24911656 /* Pods-spotify-home-objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spotify-home-objc.debug.xcconfig"; path = "Target Support Files/Pods-spotify-home-objc/Pods-spotify-home-objc.debug.xcconfig"; sourceTree = "<group>"; };
 		E73D448719E643EACA8DF66E /* Pods-spotify-home-objcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spotify-home-objcTests.debug.xcconfig"; path = "Target Support Files/Pods-spotify-home-objcTests/Pods-spotify-home-objcTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2893B5E33148F5A1F8C8922 /* Pods_spotify_home_objcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spotify_home_objcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF164AF6245C3B2D00536236 /* UIView+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extensions.h"; sourceTree = "<group>"; };
+		FF164AF7245C3B2D00536236 /* UIView+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extensions.m"; sourceTree = "<group>"; };
+		FF164AF9245C3CBC00536236 /* AnchoredConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnchoredConstraints.h; sourceTree = "<group>"; };
+		FF164AFA245C3CBC00536236 /* AnchoredConstraints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnchoredConstraints.m; sourceTree = "<group>"; };
 		FF2E11A0245B1154008A2DA2 /* spotify-home-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spotify-home-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2E11A3245B1154008A2DA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF2E11A4245B1154008A2DA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,8 +58,6 @@
 		FF2E11BF245B1155008A2DA2 /* spotify_home_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spotify_home_objcTests.m; sourceTree = "<group>"; };
 		FF2E11C1245B1155008A2DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF2E11CA245B14A9008A2DA2 /* spotify-home-objc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spotify-home-objc-Bridging-Header.h"; sourceTree = "<group>"; };
-		FF2E11CB245B14A9008A2DA2 /* SpotifyLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginService.swift; sourceTree = "<group>"; };
-		FFC3BC5D245B169500C6E7CF /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		FFC3BC5F245B18CD00C6E7CF /* Artist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		FFC3BC60245B18CD00C6E7CF /* Artist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		FFC3BC62245B19F100C6E7CF /* Track.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 		FFC3BC66245B1B0A00C6E7CF /* Album.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 		FFC3BC68245B1BCA00C6E7CF /* ItemImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemImage.h; sourceTree = "<group>"; };
 		FFC3BC69245B1BCA00C6E7CF /* ItemImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemImage.m; sourceTree = "<group>"; };
+		FFC3BC6C245B1E0900C6E7CF /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		FFC3BC6D245B1E0900C6E7CF /* Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF164AF5245C3B1000536236 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FF164AF6245C3B2D00536236 /* UIView+Extensions.h */,
+				FF164AF7245C3B2D00536236 /* UIView+Extensions.m */,
+				FF164AF9245C3CBC00536236 /* AnchoredConstraints.h */,
+				FF164AFA245C3CBC00536236 /* AnchoredConstraints.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FF2E1197245B1154008A2DA2 = {
 			isa = PBXGroup;
 			children = (
@@ -128,8 +144,9 @@
 		FF2E11A2245B1154008A2DA2 /* spotify-home-objc */ = {
 			isa = PBXGroup;
 			children = (
+				FF164AF5245C3B1000536236 /* Extensions */,
+				FFC3BC6B245B1DFB00C6E7CF /* Common */,
 				FF2E11CF245B1540008A2DA2 /* Models */,
-				FF2E11CE245B150B008A2DA2 /* Networking */,
 				FF2E11CD245B14D3008A2DA2 /* Application */,
 				FF2E11AF245B1155008A2DA2 /* Assets.xcassets */,
 				FF2E11B1245B1155008A2DA2 /* LaunchScreen.storyboard */,
@@ -160,15 +177,6 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		FF2E11CE245B150B008A2DA2 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				FFC3BC5D245B169500C6E7CF /* Client.swift */,
-				FF2E11CB245B14A9008A2DA2 /* SpotifyLoginService.swift */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		FF2E11CF245B1540008A2DA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +190,15 @@
 				FFC3BC66245B1B0A00C6E7CF /* Album.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FFC3BC6B245B1DFB00C6E7CF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FFC3BC6C245B1E0900C6E7CF /* Common.h */,
+				FFC3BC6D245B1E0900C6E7CF /* Common.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,12 +368,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF164AFB245C3CBC00536236 /* AnchoredConstraints.m in Sources */,
 				FFC3BC64245B19F100C6E7CF /* Track.m in Sources */,
 				FF2E11A5245B1154008A2DA2 /* AppDelegate.m in Sources */,
+				FFC3BC6E245B1E0900C6E7CF /* Common.m in Sources */,
 				FF2E11B6245B1155008A2DA2 /* main.m in Sources */,
+				FF164AF8245C3B2D00536236 /* UIView+Extensions.m in Sources */,
 				FFC3BC67245B1B0A00C6E7CF /* Album.m in Sources */,
-				FFC3BC5E245B169600C6E7CF /* Client.swift in Sources */,
-				FF2E11CC245B14A9008A2DA2 /* SpotifyLoginService.swift in Sources */,
 				FFC3BC6A245B1BCA00C6E7CF /* ItemImage.m in Sources */,
 				FFC3BC61245B18CD00C6E7CF /* Artist.m in Sources */,
 				FF2E11A8245B1154008A2DA2 /* SceneDelegate.m in Sources */,
@@ -552,7 +570,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E73D448719E643EACA8DF66E /* Pods-spotify-home-objcTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RD7HUSH4T7;
@@ -574,7 +591,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79F4F4237906B1232AC776C7 /* Pods-spotify-home-objcTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RD7HUSH4T7;
