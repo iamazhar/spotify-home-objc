@@ -46,11 +46,11 @@
     [self reloadData];
 }
 
-- (NSInteger)numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.tracks.count;
 }
 
-- (UICollectionViewCell *)cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     GridCollectionViewCell *cell = [self dequeueReusableCellWithReuseIdentifier:@"grid-cell" forIndexPath:indexPath];
     cell.imagePath = self.tracks[indexPath.item].album.images[1].url;
     cell.itemTitle = self.tracks[indexPath.item].name;

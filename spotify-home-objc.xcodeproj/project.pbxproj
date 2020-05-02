@@ -27,6 +27,7 @@
 		FFAAC321245D7B9D005840A2 /* CarouselCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC320245D7B9D005840A2 /* CarouselCollectionViewCell.m */; };
 		FFAAC324245D8D10005840A2 /* GridCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC323245D8D10005840A2 /* GridCollectionViewCell.m */; };
 		FFAAC327245D8F48005840A2 /* GridCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC326245D8F48005840A2 /* GridCollectionView.m */; };
+		FFAAC32B245D9D48005840A2 /* ItemsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC32A245D9D48005840A2 /* ItemsViewModel.m */; };
 		FFC3BC61245B18CD00C6E7CF /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC60245B18CD00C6E7CF /* Artist.m */; };
 		FFC3BC64245B19F100C6E7CF /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC63245B19F100C6E7CF /* Track.m */; };
 		FFC3BC67245B1B0A00C6E7CF /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC66245B1B0A00C6E7CF /* Album.m */; };
@@ -88,6 +89,8 @@
 		FFAAC323245D8D10005840A2 /* GridCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridCollectionViewCell.m; sourceTree = "<group>"; };
 		FFAAC325245D8F48005840A2 /* GridCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridCollectionView.h; sourceTree = "<group>"; };
 		FFAAC326245D8F48005840A2 /* GridCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridCollectionView.m; sourceTree = "<group>"; };
+		FFAAC329245D9D48005840A2 /* ItemsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemsViewModel.h; sourceTree = "<group>"; };
+		FFAAC32A245D9D48005840A2 /* ItemsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemsViewModel.m; sourceTree = "<group>"; };
 		FFC3BC5F245B18CD00C6E7CF /* Artist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		FFC3BC60245B18CD00C6E7CF /* Artist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		FFC3BC62245B19F100C6E7CF /* Track.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
@@ -233,6 +236,7 @@
 		FF2E11A2245B1154008A2DA2 /* spotify-home-objc */ = {
 			isa = PBXGroup;
 			children = (
+				FFAAC328245D9D36005840A2 /* View_Models */,
 				FF164B08245C71D000536236 /* Views */,
 				FF164AFC245C518B00536236 /* Design_System */,
 				FF164AF5245C3B1000536236 /* Extensions */,
@@ -312,6 +316,15 @@
 				FFAAC326245D8F48005840A2 /* GridCollectionView.m */,
 			);
 			path = Grid;
+			sourceTree = "<group>";
+		};
+		FFAAC328245D9D36005840A2 /* View_Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFAAC329245D9D48005840A2 /* ItemsViewModel.h */,
+				FFAAC32A245D9D48005840A2 /* ItemsViewModel.m */,
+			);
+			path = View_Models;
 			sourceTree = "<group>";
 		};
 		FFC3BC6B245B1DFB00C6E7CF /* Common */ = {
@@ -510,6 +523,7 @@
 				FFC3BC6A245B1BCA00C6E7CF /* ItemImage.m in Sources */,
 				FFC3BC61245B18CD00C6E7CF /* Artist.m in Sources */,
 				FF2E11A8245B1154008A2DA2 /* SceneDelegate.m in Sources */,
+				FFAAC32B245D9D48005840A2 /* ItemsViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

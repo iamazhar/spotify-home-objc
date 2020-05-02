@@ -43,14 +43,14 @@
     [self reloadData];
 }
 
-- (NSInteger)numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (self.tracks.count == 0) {
         return self.artists.count;
     }
     return self.tracks.count;
 }
 
-- (UICollectionViewCell *)cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CarouselCollectionViewCell *cell = [self dequeueReusableCellWithReuseIdentifier:@"item-cell" forIndexPath:indexPath];
     
     if (self.tracks.count == 0) {

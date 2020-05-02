@@ -10,7 +10,7 @@
 
 @implementation Track
 
-- (instancetype)init:(NSString *)trackId album:(NSObject *)album name:(NSString *)name artists:(NSMutableArray *)artists
+- (instancetype)init:(NSString *)trackId album:(Album *)album name:(NSString *)name artists:(NSMutableArray *)artists
 {
     self = [super init];
     if (self) {

@@ -18,8 +18,8 @@
     return @"grid-cell";
 }
 
-+ (CGFloat *)signOutButtonSize {
-    CGFloat *f = 48;
++ (CGFloat)signOutButtonSize {
+    CGFloat f = 48;
     return f;
 }
 
@@ -32,9 +32,9 @@
     self.gridItemReuseIdentifier = gridItemReuseIdentifier;
 }
 
-+ (void)setSignOutButtonSize:(CGFloat *)signOutButtonSize
++ (void)setSignOutButtonSize:(CGFloat)signOutButtonSize
 {
-    self.signOutButtonSize = signOutButtonSize;
+    self.signOutButtonSize = *(&signOutButtonSize);
 }
 
 @end

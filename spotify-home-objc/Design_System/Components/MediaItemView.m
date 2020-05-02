@@ -67,8 +67,6 @@
     
     UIEdgeInsets paddingZero = UIEdgeInsetsZero;
     UIEdgeInsets padding = UIEdgeInsetsMake(0, 0, 0, 5);
-    
-    CGSize sizeZero = CGSizeZero;
     CGSize size = CGSizeMake(55, 55);
     
     switch (mediaItemType) {

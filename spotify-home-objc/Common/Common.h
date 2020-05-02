@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (class, nonatomic) NSString *itemReuseIdentifier;
 @property (class, nonatomic) NSString *gridItemReuseIdentifier;
-@property (class, nonatomic) CGFloat *signOutButtonSize;
+@property (class, nonatomic) CGFloat signOutButtonSize;
 
 @end
 
