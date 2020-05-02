@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CarouselCollectionView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CarouselTableViewCell : UITableViewCell
 
-@property CGSize sptCellSize;
+@property (nonatomic, nonnull) CGSize *sptCellSize;
+@property (nonatomic, weak) UILabel *sectionLabel;
+@property (nonatomic, weak) CarouselCollectionView *itemCollectionView;
 
 @end
 

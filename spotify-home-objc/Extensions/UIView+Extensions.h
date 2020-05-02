@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (UIView_Extensions)
 
-- (AnchoredConstraints *)anchorTop:(NSLayoutYAxisAnchor *)top leading:(NSLayoutXAxisAnchor *)leading bottom:(NSLayoutYAxisAnchor *)bottom trailing:(NSLayoutXAxisAnchor *)trailing padding:(UIEdgeInsets *)padding size:(CGSize *)size;
+- (AnchoredConstraints *)anchorTop:(nullable NSLayoutYAxisAnchor *)top leading:(nullable NSLayoutXAxisAnchor *)leading bottom:(nullable NSLayoutYAxisAnchor *)bottom trailing:(nullable NSLayoutXAxisAnchor *)trailing padding:(UIEdgeInsets *)padding size:(CGSize *)size;
 
 - (AnchoredConstraints *)fillSuperview:(UIEdgeInsets *)padding;
 

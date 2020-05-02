@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GridCollectionView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GridTableViewCell : UITableViewCell
+
+@property (nonatomic, weak) UILabel *sectionLabel;
+@property (nonatomic, weak) GridCollectionView *gridCollectionView;
 
 @end
 

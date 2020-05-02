@@ -25,6 +25,8 @@
 		FFAAC316245D6D77005840A2 /* GridTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC315245D6D77005840A2 /* GridTableViewCell.m */; };
 		FFAAC31C245D76ED005840A2 /* CarouselCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC31B245D76ED005840A2 /* CarouselCollectionView.m */; };
 		FFAAC321245D7B9D005840A2 /* CarouselCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC320245D7B9D005840A2 /* CarouselCollectionViewCell.m */; };
+		FFAAC324245D8D10005840A2 /* GridCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC323245D8D10005840A2 /* GridCollectionViewCell.m */; };
+		FFAAC327245D8F48005840A2 /* GridCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC326245D8F48005840A2 /* GridCollectionView.m */; };
 		FFC3BC61245B18CD00C6E7CF /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC60245B18CD00C6E7CF /* Artist.m */; };
 		FFC3BC64245B19F100C6E7CF /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC63245B19F100C6E7CF /* Track.m */; };
 		FFC3BC67245B1B0A00C6E7CF /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC66245B1B0A00C6E7CF /* Album.m */; };
@@ -82,6 +84,10 @@
 		FFAAC31B245D76ED005840A2 /* CarouselCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarouselCollectionView.m; sourceTree = "<group>"; };
 		FFAAC31F245D7B9D005840A2 /* CarouselCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarouselCollectionViewCell.h; sourceTree = "<group>"; };
 		FFAAC320245D7B9D005840A2 /* CarouselCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarouselCollectionViewCell.m; sourceTree = "<group>"; };
+		FFAAC322245D8D10005840A2 /* GridCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridCollectionViewCell.h; sourceTree = "<group>"; };
+		FFAAC323245D8D10005840A2 /* GridCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridCollectionViewCell.m; sourceTree = "<group>"; };
+		FFAAC325245D8F48005840A2 /* GridCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridCollectionView.h; sourceTree = "<group>"; };
+		FFAAC326245D8F48005840A2 /* GridCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridCollectionView.m; sourceTree = "<group>"; };
 		FFC3BC5F245B18CD00C6E7CF /* Artist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		FFC3BC60245B18CD00C6E7CF /* Artist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		FFC3BC62245B19F100C6E7CF /* Track.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
@@ -300,6 +306,10 @@
 		FFAAC319245D76BF005840A2 /* Grid */ = {
 			isa = PBXGroup;
 			children = (
+				FFAAC322245D8D10005840A2 /* GridCollectionViewCell.h */,
+				FFAAC323245D8D10005840A2 /* GridCollectionViewCell.m */,
+				FFAAC325245D8F48005840A2 /* GridCollectionView.h */,
+				FFAAC326245D8F48005840A2 /* GridCollectionView.m */,
 			);
 			path = Grid;
 			sourceTree = "<group>";
@@ -480,7 +490,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAAC327245D8F48005840A2 /* GridCollectionView.m in Sources */,
 				FFAAC321245D7B9D005840A2 /* CarouselCollectionViewCell.m in Sources */,
+				FFAAC324245D8D10005840A2 /* GridCollectionViewCell.m in Sources */,
 				FF164B0C245C71EA00536236 /* HomeTableView.m in Sources */,
 				FF164AFB245C3CBC00536236 /* AnchoredConstraints.m in Sources */,
 				FF164B07245C686C00536236 /* UIColor+BrandColors.m in Sources */,
