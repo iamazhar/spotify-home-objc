@@ -7,7 +7,8 @@
 //
 
 #import "HomeTableView.h"
-#import "Spotify_Clone-Swift.h"
+#import "CarouselTableViewCell.h"
+#import "GridTableViewCell.h"
 
 /// Table view for Home screen
 @implementation HomeTableView
@@ -21,8 +22,8 @@
         [self setShowsVerticalScrollIndicator:NO];
         [self setBackgroundColor:UIColor.clearColor];
         
-        [self registerClass:CarouselTableViewCell.self forCellReuseIdentifier: Constant.itemReuseIdentifier];
-        [self registerClass:GridTableViewCell.self forCellReuseIdentifier: Constant.gridItemReuseIdentifier];
+        [self registerClass:CarouselTableViewCell.self forCellReuseIdentifier: @"item-cell"];
+        [self registerClass:GridTableViewCell.self forCellReuseIdentifier: @"grid-cell"];
     }
     return self;
 }

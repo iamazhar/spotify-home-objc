@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ItemImage.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (atomic, strong) NSString *artistId;
 @property (atomic, strong) NSString *name;
-@property (atomic, strong) NSMutableArray *images;
+@property (atomic, strong) NSMutableArray<ItemImage *> *images;
 
 @end
 
