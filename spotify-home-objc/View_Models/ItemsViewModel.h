@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ItemsViewModel : NSObject
 
 @property (nonatomic, strong) NSMutableArray<Track *> *tracks;
-@property (nonatomic, strong) NSMutableArray<Artist *> *artists;
 
 -(void) fetchTracks;
--(void) fetchArtists;
 
 @end
 

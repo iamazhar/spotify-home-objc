@@ -61,7 +61,7 @@
         return cell;
     }
     
-    NSString *imagePath = self.tracks[indexPath.item].album.images[1].url;
+    NSString *imagePath = self.tracks[indexPath.item].images[1].url;
     cell.imagePath = imagePath;
     cell.cellSize = self.cellSize;
     return cell;

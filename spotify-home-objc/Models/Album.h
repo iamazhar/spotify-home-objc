@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (atomic, strong) NSString *albumId;
 @property (atomic, strong) NSMutableArray<ItemImage *> *images;
-
+- (instancetype)init:(NSString *)albumId images:(NSMutableArray *)images;
 @end
 
 NS_ASSUME_NONNULL_END

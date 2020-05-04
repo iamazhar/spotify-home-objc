@@ -18,9 +18,9 @@
 
 @implementation CarouselTableViewCell
 
-- (void)setSptCellSize:(CGSize *)sptCellSize {
+- (void)setSptCellSize:(CGSize)sptCellSize {
     self.sptCellSize = _sptCellSize;
-    [[self.itemCollectionView.heightAnchor constraintEqualToConstant:self.sptCellSize->height + 30] setActive:YES];
+    [[self.itemCollectionView.heightAnchor constraintEqualToConstant:self.sptCellSize.height + 30] setActive:YES];
     [self.itemCollectionView updateConstraints];
 }
 

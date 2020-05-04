@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CarouselCollectionView : UICollectionView
 
-@property (atomic, strong) NSMutableArray<Track *> *tracks;
-@property (atomic, strong) NSMutableArray<Artist *> *artists;
+@property (atomic, strong) NSArray<Track *> *tracks;
+@property (atomic, strong) NSArray<Artist *> *artists;
 
 @end
 

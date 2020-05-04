@@ -10,4 +10,8 @@
 
 @implementation ItemsViewModel
 
+- (void)fetchTracks {
+    
+}
+
 @end

@@ -52,7 +52,7 @@
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     GridCollectionViewCell *cell = [self dequeueReusableCellWithReuseIdentifier:@"grid-cell" forIndexPath:indexPath];
-    cell.imagePath = self.tracks[indexPath.item].album.images[1].url;
+    cell.imagePath = self.tracks[indexPath.item].images[1].url;
     cell.itemTitle = self.tracks[indexPath.item].name;
     return cell;
 }

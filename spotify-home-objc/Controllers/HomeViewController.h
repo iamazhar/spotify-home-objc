@@ -1,5 +1,5 @@
 //
-//  GridCollectionView.h
+//  HomeViewController.h
 //  spotify-home-objc
 //
 //  Created by Azhar Anwar on 5/2/20.
@@ -7,14 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Track.h"
-#import "GridCollectionViewCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GridCollectionView : UICollectionView
-
-@property (nonatomic, weak) NSArray<Track *> *tracks;
+@interface HomeViewController : UIViewController
 
 @end
 

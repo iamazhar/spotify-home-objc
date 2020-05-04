@@ -7,9 +7,6 @@ target 'spotify-home-objc' do
   
   pod 'SDWebImage'
 
-  source 'https://github.com/CocoaPods/Specs.git'
-  pod 'SpotifyLogin', '~> 0.1'
-
   target 'spotify-home-objcTests' do
     inherit! :search_paths
     # Pods for testing

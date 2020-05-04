@@ -22,12 +22,14 @@
 		FF2E11B3245B1155008A2DA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2E11B1245B1155008A2DA2 /* LaunchScreen.storyboard */; };
 		FF2E11B6245B1155008A2DA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2E11B5245B1155008A2DA2 /* main.m */; };
 		FF2E11C0245B1155008A2DA2 /* spotify_home_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2E11BF245B1155008A2DA2 /* spotify_home_objcTests.m */; };
+		FF509BD124600A7900890036 /* test-data.json in Resources */ = {isa = PBXBuildFile; fileRef = FF509BD024600A7900890036 /* test-data.json */; };
 		FFAAC316245D6D77005840A2 /* GridTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC315245D6D77005840A2 /* GridTableViewCell.m */; };
 		FFAAC31C245D76ED005840A2 /* CarouselCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC31B245D76ED005840A2 /* CarouselCollectionView.m */; };
 		FFAAC321245D7B9D005840A2 /* CarouselCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC320245D7B9D005840A2 /* CarouselCollectionViewCell.m */; };
 		FFAAC324245D8D10005840A2 /* GridCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC323245D8D10005840A2 /* GridCollectionViewCell.m */; };
 		FFAAC327245D8F48005840A2 /* GridCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC326245D8F48005840A2 /* GridCollectionView.m */; };
 		FFAAC32B245D9D48005840A2 /* ItemsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC32A245D9D48005840A2 /* ItemsViewModel.m */; };
+		FFAAC32F245D9F82005840A2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAAC32E245D9F82005840A2 /* HomeViewController.m */; };
 		FFC3BC61245B18CD00C6E7CF /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC60245B18CD00C6E7CF /* Artist.m */; };
 		FFC3BC64245B19F100C6E7CF /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC63245B19F100C6E7CF /* Track.m */; };
 		FFC3BC67245B1B0A00C6E7CF /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BC66245B1B0A00C6E7CF /* Album.m */; };
@@ -79,6 +81,7 @@
 		FF2E11BF245B1155008A2DA2 /* spotify_home_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spotify_home_objcTests.m; sourceTree = "<group>"; };
 		FF2E11C1245B1155008A2DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF2E11CA245B14A9008A2DA2 /* spotify-home-objc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spotify-home-objc-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF509BD024600A7900890036 /* test-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "test-data.json"; sourceTree = "<group>"; };
 		FFAAC314245D6D77005840A2 /* GridTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridTableViewCell.h; sourceTree = "<group>"; };
 		FFAAC315245D6D77005840A2 /* GridTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridTableViewCell.m; sourceTree = "<group>"; };
 		FFAAC31A245D76ED005840A2 /* CarouselCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarouselCollectionView.h; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 		FFAAC326245D8F48005840A2 /* GridCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridCollectionView.m; sourceTree = "<group>"; };
 		FFAAC329245D9D48005840A2 /* ItemsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemsViewModel.h; sourceTree = "<group>"; };
 		FFAAC32A245D9D48005840A2 /* ItemsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemsViewModel.m; sourceTree = "<group>"; };
+		FFAAC32D245D9F82005840A2 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FFAAC32E245D9F82005840A2 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		FFC3BC5F245B18CD00C6E7CF /* Artist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		FFC3BC60245B18CD00C6E7CF /* Artist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		FFC3BC62245B19F100C6E7CF /* Track.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
@@ -236,6 +241,8 @@
 		FF2E11A2245B1154008A2DA2 /* spotify-home-objc */ = {
 			isa = PBXGroup;
 			children = (
+				FF509BCF2460007700890036 /* Data */,
+				FFAAC32C245D9F6A005840A2 /* Controllers */,
 				FFAAC328245D9D36005840A2 /* View_Models */,
 				FF164B08245C71D000536236 /* Views */,
 				FF164AFC245C518B00536236 /* Design_System */,
@@ -287,6 +294,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FF509BCF2460007700890036 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FF509BD024600A7900890036 /* test-data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		FFAAC317245D76B0005840A2 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +340,15 @@
 				FFAAC32A245D9D48005840A2 /* ItemsViewModel.m */,
 			);
 			path = View_Models;
+			sourceTree = "<group>";
+		};
+		FFAAC32C245D9F6A005840A2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFAAC32D245D9F82005840A2 /* HomeViewController.h */,
+				FFAAC32E245D9F82005840A2 /* HomeViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		FFC3BC6B245B1DFB00C6E7CF /* Common */ = {
@@ -420,6 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF509BD124600A7900890036 /* test-data.json in Resources */,
 				FF2E11B3245B1155008A2DA2 /* LaunchScreen.storyboard in Resources */,
 				FF2E11B0245B1155008A2DA2 /* Assets.xcassets in Resources */,
 			);
@@ -520,6 +545,7 @@
 				FF2E11B6245B1155008A2DA2 /* main.m in Sources */,
 				FF164AF8245C3B2D00536236 /* UIView+Extensions.m in Sources */,
 				FFC3BC67245B1B0A00C6E7CF /* Album.m in Sources */,
+				FFAAC32F245D9F82005840A2 /* HomeViewController.m in Sources */,
 				FFC3BC6A245B1BCA00C6E7CF /* ItemImage.m in Sources */,
 				FFC3BC61245B18CD00C6E7CF /* Artist.m in Sources */,
 				FF2E11A8245B1154008A2DA2 /* SceneDelegate.m in Sources */,
