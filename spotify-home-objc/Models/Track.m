@@ -10,14 +10,13 @@
 
 @implementation Track
 
-- (instancetype)init:(NSString *)trackId album:(NSObject *)album name:(NSString *)name artists:(NSMutableArray *)artists
+- (instancetype)initWith:(NSString *)trackId images:(NSArray<ItemImage *> *)images name:(NSString *)name
 {
     self = [super init];
     if (self) {
         self.trackId = trackId;
-        self.album = album;
+        self.images = images;
         self.name = name;
-        self.artists = artists;
     }
     return self;
 }

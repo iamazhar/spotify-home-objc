@@ -7,16 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Artist.h"
+#import "ItemImage.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Track : NSObject
 
 @property (atomic, strong) NSString *trackId;
-@property (atomic, strong) NSObject *album;
+@property (atomic, strong) NSArray<ItemImage *> *images;
 @property (atomic, strong) NSString *name;
-@property (atomic, strong) NSMutableArray *artists;
-
+@property (atomic, strong) NSMutableArray<Artist *> *artists;
+- (instancetype)initWith:(NSString *)trackId images:(NSArray<ItemImage *> *)images name:(NSString *)name;
 @end
+
 
 NS_ASSUME_NONNULL_END
