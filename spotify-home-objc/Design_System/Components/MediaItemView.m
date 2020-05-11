@@ -10,15 +10,12 @@
 
 @interface MediaItemView()
 
-@property (nonatomic, weak) UIView *containerBgView;
-@property (nonatomic, weak) UIStackView *containerStackView;
+@property (nonatomic, strong) UIView *containerBgView;
+@property (nonatomic, strong) UIStackView *containerStackView;
 
 @end
 
 @implementation MediaItemView
-{
-    MediaItemType mediaItemType;
-}
 
 - (void)setContainerBgView:(UIView *)containerBgView {
     containerBgView = _containerBgView;
@@ -49,7 +46,16 @@
 - (id)initWithFrame:(CGRect)frame mediaItemType:(MediaItemType)mediaItemType {
     self = [super initWithFrame:frame];
     if (self) {
-        //
+        self.containerStackView = [[UIStackView alloc] init];
+        [self.containerStackView setTranslatesAutoresizingMaskIntoConstraints:NO];
+        
+        self.artworkImageView = [[UIImageView alloc] init];
+        [self.artworkImageView setTranslatesAutoresizingMaskIntoConstraints:NO];
+        
+        self.itemLabel = [[UILabel alloc] init];
+        [self.itemLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
+        
+        [self setupLayoutWithType:mediaItemType];
     }
     return self;
 }
@@ -72,14 +78,15 @@
     switch (mediaItemType) {
         case carousel:
             // stack view props setup
+            
             [self.containerStackView setSpacing:8.0];
             [self.containerStackView setAxis:UILayoutConstraintAxisVertical];
             [self.containerStackView setAlignment:UIStackViewAlignmentLeading];
             
             // add views
+            
             [self.containerStackView addArrangedSubview:self.artworkImageView];
             [self.containerStackView addArrangedSubview:self.itemLabel];
-            
             [self addSubview:self.containerStackView];
             
             [self.containerStackView fillSuperview:&paddingZero];

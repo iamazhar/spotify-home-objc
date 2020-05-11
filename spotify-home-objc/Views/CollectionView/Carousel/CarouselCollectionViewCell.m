@@ -12,12 +12,14 @@
 @implementation CarouselCollectionViewCell
 
 - (void)setImagePath:(NSString *)imagePath {
-    self.imagePath = _imagePath;
+    _imagePath = imagePath;
+    self.mediaItem = [[MediaItemView alloc] initWithFrame:self.frame mediaItemType:(MediaItemType)carousel];
     [self.mediaItem.artworkImageView sd_setImageWithURL:[NSURL URLWithString:imagePath]];
 }
 
 - (void)setItemTitle:(NSString *)itemTitle {
-    self.itemTitle = _itemTitle;
+    _itemTitle = itemTitle;
+    self.mediaItem = [[MediaItemView alloc] initWithFrame:self.frame mediaItemType:(MediaItemType)carousel];
     self.mediaItem.itemLabel.text = itemTitle;
     [self.mediaItem.itemLabel sizeToFit];
 }
@@ -26,6 +28,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.imagePath = [[NSString alloc] init];
+        self.itemTitle = [[NSString alloc] init];
         [self setupLayout];
     }
     return self;
@@ -40,10 +44,12 @@
     [self.contentView setBackgroundColor:UIColor.clearColor];
     [self addSubview:self.mediaItem];
     
-    UIEdgeInsets paddingZero = UIEdgeInsetsZero;
-    CGSize sizeZero = CGSizeZero;
+    [self.mediaItem setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [[self.mediaItem.topAnchor constraintEqualToAnchor:self.topAnchor] setActive:YES];
+    [[self.mediaItem.bottomAnchor constraintEqualToAnchor:self.bottomAnchor] setActive:YES];
+    [[self.mediaItem.leadingAnchor constraintEqualToAnchor:self.leadingAnchor] setActive:YES];
+    [[self.mediaItem.trailingAnchor constraintEqualToAnchor:self.trailingAnchor] setActive:YES];
     
-    [self.mediaItem anchorTop:self.topAnchor leading:self.leadingAnchor bottom:self.bottomAnchor trailing:self.trailingAnchor padding:&paddingZero size:&sizeZero];
 }
 
 @end

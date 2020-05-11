@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *imagePath;
 @property (nonatomic, strong) NSString *itemTitle;
-@property (nonatomic, weak) MediaItemView *mediaItem;
+@property (nonatomic, strong) MediaItemView *mediaItem;
 
 @end
 

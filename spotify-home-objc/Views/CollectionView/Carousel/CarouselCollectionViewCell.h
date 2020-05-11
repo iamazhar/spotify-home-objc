@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *imagePath;
 @property (nonatomic, strong) NSString *itemTitle;
-@property (nonatomic, weak) MediaItemView *mediaItem;
-@property (nonatomic, nonnull) CGSize *cellSize;
+@property (nonatomic, strong) MediaItemView *mediaItem;
+@property (nonatomic) CGSize cellSize;
 
 @end
 
