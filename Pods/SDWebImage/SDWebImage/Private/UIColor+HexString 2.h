@@ -6,14 +6,13 @@
  * file that was distributed with this source code.
  */
 
-#import <Foundation/Foundation.h>
 #import "SDWebImageCompat.h"
 
-@interface SDWeakProxy : NSProxy
+@interface UIColor (HexString)
 
-@property (nonatomic, weak, readonly, nullable) id target;
-
-- (nonnull instancetype)initWithTarget:(nonnull id)target;
-+ (nonnull instancetype)proxyWithTarget:(nonnull id)target;
+/**
+ Convenience way to get hex string from color. The output should always be 32-bit RGBA hex string like `#00000000`.
+ */
+@property (nonatomic, copy, readonly, nonnull) NSString *sd_hexString;
 
 @end

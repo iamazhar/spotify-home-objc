@@ -24,30 +24,17 @@
 @implementation HomeViewController
 
 - (void)setTableView:(HomeTableView *)homeTableView {
-    self.homeTableView =_homeTableView;
-    [self.homeTableView setBackgroundColor:UIColor.clearColor];
+    _homeTableView = homeTableView;
+    [homeTableView setBackgroundColor:UIColor.clearColor];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.tracks = [[NSMutableArray<Track *> alloc] init];
-    self.homeTableView = [[HomeTableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
-    
-    [self.homeTableView setDelegate:self];
-    [self.homeTableView setDataSource:self];
-    
-    // setup nav bar and gradient background
-    [self setupNavBar];
-    [self setupBackgroundGradient];
-    
-    // load json test data
+- (void)loadTestData {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test-data" ofType:@"json"];
     NSData *jsonData = [[NSData alloc] initWithContentsOfFile:filePath];
     NSError *error = nil;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
     // print
-    NSLog(@"%@", jsonDict);
+    //    NSLog(@"%@", jsonDict);
     NSArray *tracks = jsonDict[@"items"];
     
     // loop over dictionary
@@ -61,11 +48,31 @@
     }
     // reload table view
     [self.homeTableView reloadData];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
+    self.tracks = [[NSMutableArray<Track *> alloc] init];
+    self.homeTableView = [[HomeTableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     [self.view addSubview:self.homeTableView];
-    UIEdgeInsets insetsZero = UIEdgeInsetsZero;
-    CGSize sizeZero = CGSizeZero;
-    [self.homeTableView anchorTop:self.view.topAnchor leading:self.view.leadingAnchor bottom:self.view.bottomAnchor trailing:self.view.trailingAnchor padding:&insetsZero size:&sizeZero];
+    
+    [self.homeTableView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [[self.homeTableView.topAnchor constraintEqualToAnchor:self.view.topAnchor] setActive:YES];
+    [[self.homeTableView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor] setActive:YES];
+    [[self.homeTableView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor] setActive:YES];
+    [[self.homeTableView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor] setActive:YES];
+    
+    [self.homeTableView setDelegate:self];
+    [self.homeTableView setDataSource:self];
+    
+    // setup nav bar and gradient background
+    [self setupNavBar];
+    [self setupBackgroundGradient];
+    
+    // load json test data
+    [self loadTestData];
+    NSLog(@"");
 }
 
 -(void) setupBackgroundGradient {
@@ -93,7 +100,7 @@
     
     switch (indexPath.row) {
         case 0: {
-            GridTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"grid_cell" forIndexPath:indexPath];
+            GridTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"grid-cell" forIndexPath:indexPath];
             cell.sectionLabel.text = @"Good evening";
             cell.gridCollectionView.tracks = self.tracks;
             return cell;

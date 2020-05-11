@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CarouselTableViewCell : UITableViewCell
 
 @property (nonatomic) CGSize sptCellSize;
-@property (nonatomic, weak) UILabel *sectionLabel;
-@property (nonatomic, weak) CarouselCollectionView *itemCollectionView;
+@property (nonatomic, strong) UILabel *sectionLabel;
+@property (nonatomic, strong) CarouselCollectionView *itemCollectionView;
 
 @end
 

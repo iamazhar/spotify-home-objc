@@ -19,8 +19,10 @@ typedef enum mediaItem{
     grid
 } MediaItemType;
 
-@property (nonatomic, weak) UIImageView *artworkImageView;
-@property (nonatomic, weak) UILabel *itemLabel;
+@property (nonatomic, strong) UIImageView *artworkImageView;
+@property (nonatomic, strong) UILabel *itemLabel;
+
+- (id)initWithFrame:(CGRect)frame mediaItemType:(MediaItemType)mediaItemType;
 
 @end
 

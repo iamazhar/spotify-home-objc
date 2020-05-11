@@ -6,11 +6,8 @@
  * file that was distributed with this source code.
  */
 
-#import "SDWebImageCompat.h"
-#import "SDImageGIFCoder.h"
+#import "SDInternalMacros.h"
 
-@interface SDImageGIFCoder ()
-
-- (float)sd_frameDurationAtIndex:(NSUInteger)index source:(nonnull CGImageSourceRef)source;
-
-@end
+void sd_executeCleanupBlock (__strong sd_cleanupBlock_t *block) {
+    (*block)();
+}

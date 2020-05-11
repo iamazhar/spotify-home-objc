@@ -16,7 +16,7 @@
 @implementation GridTableViewCell
 
 - (void)setContainerStackView:(UIStackView *)containerStackView {
-    self.containerStackView = _containerStackView;
+    _containerStackView = containerStackView;
     [self.containerStackView setTranslatesAutoresizingMaskIntoConstraints: NO];
     [self.containerStackView setAlignment:UIStackViewAlignmentLeading];
     [self.containerStackView setAxis:UILayoutConstraintAxisVertical];
@@ -24,7 +24,7 @@
 }
 
 - (void)setSectionLabel:(UILabel *)sectionLabel {
-    self.sectionLabel = _sectionLabel;
+    _sectionLabel = sectionLabel;
     [self.sectionLabel setTranslatesAutoresizingMaskIntoConstraints: NO];
     [self.sectionLabel setFont:[UIFont systemFontOfSize:20 weight:UIFontWeightBold]];
     [self.sectionLabel setText:@"Good Evening"];

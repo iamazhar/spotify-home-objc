@@ -11,41 +11,41 @@
 
 @interface CarouselTableViewCell ()
 
-@property (nonatomic, weak) UIStackView *containerStackView;
-@property (nonatomic, weak) UIStackView *labelStackView;
+@property (nonatomic, strong) UIStackView *containerStackView;
+@property (nonatomic, strong) UIStackView *labelStackView;
 
 @end
 
 @implementation CarouselTableViewCell
 
 - (void)setSptCellSize:(CGSize)sptCellSize {
-    self.sptCellSize = _sptCellSize;
-    [[self.itemCollectionView.heightAnchor constraintEqualToConstant:self.sptCellSize.height + 30] setActive:YES];
+    _sptCellSize = sptCellSize;
+    [[self.itemCollectionView.heightAnchor constraintEqualToConstant:sptCellSize.height + 30] setActive:YES];
     [self.itemCollectionView updateConstraints];
 }
 
 - (void)setContainerStackView:(UIStackView *)containerStackView {
-    self.containerStackView = _containerStackView;
+    _containerStackView = containerStackView;
     [self.containerStackView setAlignment:UIStackViewAlignmentLeading];
     [self.containerStackView setAxis:UILayoutConstraintAxisVertical];
     [self.containerStackView setSpacing:15.0];
 }
 
 - (void)setLabelStackView:(UIStackView *)labelStackView {
-    self.labelStackView = _labelStackView;
+    _labelStackView = labelStackView;
     [self.labelStackView setAlignment:UIStackViewAlignmentCenter];
     [self.labelStackView setAxis:UILayoutConstraintAxisHorizontal];
     [self.labelStackView setSpacing:15.0];
 }
 
 - (void)setSectionLabel:(UILabel *)sectionLabel {
-    self.sectionLabel = _sectionLabel;
+    _sectionLabel = sectionLabel;
     [self.sectionLabel setFont:[UIFont systemFontOfSize:20 weight:UIFontWeightBold]];
     [self.sectionLabel setText:@"Top Tracks"];
 }
 
 - (void)setItemCollectionView:(CarouselCollectionView *)itemCollectionView {
-    self.itemCollectionView = _itemCollectionView;
+    _itemCollectionView = itemCollectionView;
     [self.itemCollectionView setTranslatesAutoresizingMaskIntoConstraints:NO];
 }
 
@@ -62,22 +62,27 @@
 - (void) setupLayout {
     
     UIEdgeInsets insetsZero = UIEdgeInsetsZero;
-    CGSize sizeZero = CGSizeZero;
     
     [self setBackgroundColor:UIColor.clearColor];
     
     // section label stack view
+    self.labelStackView = [[UIStackView alloc] init];
     [self.labelStackView addArrangedSubview:UIView.new];
     [self.labelStackView addArrangedSubview:self.sectionLabel];
     
     // container stack view
+    self.itemCollectionView = [[CarouselCollectionView alloc] initWithFrame:self.frame collectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
+    [self.itemCollectionView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    self.containerStackView = [[UIStackView alloc] init];
     [self.containerStackView addArrangedSubview:self.labelStackView];
     [self.containerStackView addArrangedSubview:self.itemCollectionView];
-    [self.itemCollectionView anchorTop:nil leading:self.containerStackView.leadingAnchor bottom:nil trailing:self.containerStackView.trailingAnchor padding:&insetsZero size:&sizeZero];
+    
+    [self.itemCollectionView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [[self.itemCollectionView.leadingAnchor constraintEqualToAnchor:self.containerStackView.leadingAnchor] setActive:YES];
+    [[self.itemCollectionView.trailingAnchor constraintEqualToAnchor:self.containerStackView.trailingAnchor] setActive:YES];
     
     // add to view
     [self addSubview:self.containerStackView];
-    
     
     [self.containerStackView fillSuperview:&insetsZero];
     

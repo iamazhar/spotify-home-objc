@@ -12,12 +12,12 @@
 @implementation GridCollectionViewCell
 
 - (void)setImagePath:(NSString *)imagePath {
-    self.mediaItem = _mediaItem;
+    _mediaItem = self.mediaItem;
     [self.mediaItem.artworkImageView sd_setImageWithURL:[NSURL URLWithString:imagePath]];
 }
 
 - (void)setItemTitle:(NSString *)itemTitle {
-    self.itemTitle = _itemTitle;
+    _itemTitle = itemTitle;
     self.mediaItem.itemLabel.text = itemTitle;
     [self.mediaItem.itemLabel sizeToFit];
 }

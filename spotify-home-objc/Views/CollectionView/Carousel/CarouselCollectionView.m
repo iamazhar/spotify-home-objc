@@ -11,7 +11,7 @@
 
 @interface CarouselCollectionView ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
-@property (nonatomic, nonnull) CGSize *cellSize;
+@property (nonatomic) CGSize sptCellSize;
 
 @end
 
@@ -56,19 +56,19 @@
     if (self.tracks.count == 0) {
         NSString *imagePath = self.artists[indexPath.item].images[1].url;
         cell.imagePath = imagePath;
-        cell.cellSize = self.cellSize;
+        cell.cellSize = self.sptCellSize;
         cell.itemTitle = self.artists[indexPath.item].name;
         return cell;
     }
     
     NSString *imagePath = self.tracks[indexPath.item].images[1].url;
     cell.imagePath = imagePath;
-    cell.cellSize = self.cellSize;
+    cell.cellSize = self.sptCellSize;
     return cell;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return *(self.cellSize);
+    return  self.sptCellSize;
 }
 
 @end
