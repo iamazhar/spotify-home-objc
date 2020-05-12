@@ -22,8 +22,8 @@
         [self setShowsVerticalScrollIndicator:NO];
         [self setBackgroundColor:UIColor.clearColor];
         
-        [self registerClass:CarouselTableViewCell.self forCellReuseIdentifier: @"item-cell"];
-        [self registerClass:GridTableViewCell.self forCellReuseIdentifier: @"grid-cell"];
+        [self registerClass:CarouselTableViewCell.self forCellReuseIdentifier: Common.itemReuseIdentifier];
+        [self registerClass:GridTableViewCell.self forCellReuseIdentifier: Common.gridItemReuseIdentifier];
     }
     return self;
 }

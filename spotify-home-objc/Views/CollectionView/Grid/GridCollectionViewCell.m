@@ -33,8 +33,18 @@
 
 - (void) setupLayout {
     [self addSubview:self.mediaItem];
-    UIEdgeInsets insetsZero = UIEdgeInsetsZero;
-    [self.mediaItem fillSuperview:&insetsZero];
+    [self.mediaItem setTranslatesAutoresizingMaskIntoConstraints:NO];
+    
+    [[self.mediaItem.topAnchor constraintEqualToAnchor:self.topAnchor] setActive:YES];
+    [[self.mediaItem.bottomAnchor constraintEqualToAnchor:self.bottomAnchor] setActive:YES];
+    
+    [NSLayoutConstraint activateConstraints:@[
+        [self.mediaItem.topAnchor constraintEqualToAnchor:self.topAnchor],
+        [self.mediaItem.bottomAnchor constraintEqualToAnchor:self.bottomAnchor],
+        [self.mediaItem.leadingAnchor constraintEqualToAnchor:self.leadingAnchor],
+        [self.mediaItem.trailingAnchor constraintEqualToAnchor:self.trailingAnchor]
+    ]];
+
 }
 
 @end

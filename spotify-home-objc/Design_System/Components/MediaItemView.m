@@ -46,13 +46,16 @@
 - (id)initWithFrame:(CGRect)frame mediaItemType:(MediaItemType)mediaItemType {
     self = [super initWithFrame:frame];
     if (self) {
-        self.containerStackView = [[UIStackView alloc] init];
+        self.containerBgView = UIStackView.new;
+        [self.containerBgView setTranslatesAutoresizingMaskIntoConstraints:NO];
+        
+        self.containerStackView = UIStackView.new;
         [self.containerStackView setTranslatesAutoresizingMaskIntoConstraints:NO];
         
-        self.artworkImageView = [[UIImageView alloc] init];
+        self.artworkImageView = UIImageView.new;
         [self.artworkImageView setTranslatesAutoresizingMaskIntoConstraints:NO];
         
-        self.itemLabel = [[UILabel alloc] init];
+        self.itemLabel = UILabel.new;
         [self.itemLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
         
         [self setupLayoutWithType:mediaItemType];
@@ -64,16 +67,23 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        //
+        self.containerBgView = UIStackView.new;
+        [self.containerBgView setTranslatesAutoresizingMaskIntoConstraints:NO];
+        
+        self.containerStackView = UIStackView.new;
+        [self.containerStackView setTranslatesAutoresizingMaskIntoConstraints:NO];
+        
+        self.artworkImageView = UIImageView.new;
+        [self.artworkImageView setTranslatesAutoresizingMaskIntoConstraints:NO];
+        
+        self.itemLabel = UILabel.new;
+        [self.itemLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
+        
     }
     return self;
 }
 
 - (void)setupLayoutWithType:(MediaItemType)mediaItemType {
-    
-    UIEdgeInsets paddingZero = UIEdgeInsetsZero;
-    UIEdgeInsets padding = UIEdgeInsetsMake(0, 0, 0, 5);
-    CGSize size = CGSizeMake(55, 55);
     
     switch (mediaItemType) {
         case carousel:
@@ -89,7 +99,11 @@
             [self.containerStackView addArrangedSubview:self.itemLabel];
             [self addSubview:self.containerStackView];
             
-            [self.containerStackView fillSuperview:&paddingZero];
+            [[self.containerStackView.topAnchor constraintEqualToAnchor:self.topAnchor] setActive:YES];
+            [[self.containerStackView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor] setActive:YES];
+            [[self.containerStackView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor] setActive:YES];
+            [[self.containerStackView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor] setActive:YES];
+            
             break;
             
         case grid:
@@ -101,17 +115,26 @@
             // add views
             [self.containerStackView addArrangedSubview:self.artworkImageView];
             
-            [self.artworkImageView anchorTop:nil leading:nil bottom:nil trailing:nil padding:&paddingZero size:&size];
+            [[self.artworkImageView.widthAnchor constraintEqualToConstant:55] setActive:YES];
+            [[self.artworkImageView.heightAnchor constraintEqualToConstant:55] setActive:YES];
             
             [self.containerStackView addArrangedSubview:self.itemLabel];
             
             [self.containerBgView addSubview:self.containerStackView];
-            [self.containerStackView fillSuperview:&paddingZero];
             
-            
+            [[self.containerStackView.topAnchor constraintEqualToAnchor:self.topAnchor] setActive:YES];
+            [[self.containerStackView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor] setActive:YES];
+            [[self.containerStackView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor] setActive:YES];
+            [[self.containerStackView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor] setActive:YES];
             
             [self addSubview:self.containerBgView];
-            [self.containerBgView anchorTop:self.topAnchor leading:self.leadingAnchor bottom:self.bottomAnchor trailing:self.trailingAnchor padding:&padding size:&size];
+            
+            [[self.containerBgView.topAnchor constraintEqualToAnchor:self.topAnchor] setActive:YES];
+            [[self.containerBgView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor] setActive:YES];
+            [[self.containerBgView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor] setActive:YES];
+            [[self.containerBgView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-5] setActive:YES];
+            [[self.containerBgView.heightAnchor constraintEqualToConstant:55] setActive:YES];
+            [[self.containerBgView.widthAnchor constraintEqualToConstant:55] setActive:YES];
             
         default:
             break;

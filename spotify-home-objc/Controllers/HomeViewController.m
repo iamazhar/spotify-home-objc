@@ -9,7 +9,6 @@
 #import "HomeViewController.h"
 #import "Track.h"
 #import "HomeTableView.h"
-#import "UIView+Extensions.h"
 #import "GridTableViewCell.h"
 #import "CarouselTableViewCell.h"
 #import "Album.h"
@@ -33,8 +32,7 @@
     NSData *jsonData = [[NSData alloc] initWithContentsOfFile:filePath];
     NSError *error = nil;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
-    // print
-    //    NSLog(@"%@", jsonDict);
+    
     NSArray *tracks = jsonDict[@"items"];
     
     // loop over dictionary
@@ -53,6 +51,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.view setBackgroundColor:UIColor.blueColor];
+    
     self.tracks = [[NSMutableArray<Track *> alloc] init];
     self.homeTableView = [[HomeTableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     [self.view addSubview:self.homeTableView];
@@ -68,11 +68,9 @@
     
     // setup nav bar and gradient background
     [self setupNavBar];
-    [self setupBackgroundGradient];
     
     // load json test data
     [self loadTestData];
-    NSLog(@"");
 }
 
 -(void) setupBackgroundGradient {
@@ -100,7 +98,7 @@
     
     switch (indexPath.row) {
         case 0: {
-            GridTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"grid-cell" forIndexPath:indexPath];
+            GridTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Common.gridItemReuseIdentifier forIndexPath:indexPath];
             cell.sectionLabel.text = @"Good evening";
             cell.gridCollectionView.tracks = self.tracks;
             return cell;
@@ -109,7 +107,7 @@
             break;
             
         case 1: {
-            CarouselTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"item-cell" forIndexPath:indexPath];
+            CarouselTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Common.itemReuseIdentifier forIndexPath:indexPath];
             cell.sptCellSize = CGSizeMake(113, 150);
             cell.sectionLabel.text = @"Your top tracks";
             cell.itemCollectionView.tracks = self.tracks;
@@ -118,20 +116,20 @@
             break;
             
         case 2: {
-            CarouselTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"item-cell" forIndexPath:indexPath];
+            CarouselTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Common.itemReuseIdentifier forIndexPath:indexPath];
             cell.sptCellSize = CGSizeMake(160, 200);
             cell.sectionLabel.text = @"Your top tracks";
             cell.itemCollectionView.tracks = self.tracks;
             return cell;
         }
+            break;
         default: {
-            CarouselTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"item-cell" forIndexPath:indexPath];
+            CarouselTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Common.itemReuseIdentifier forIndexPath:indexPath];
             cell.sptCellSize = CGSizeMake(160, 200);
             cell.sectionLabel.text = @"Your top tracks";
             cell.itemCollectionView.tracks = self.tracks;
             return cell;
         }
-            
             break;
     }
 }
@@ -143,8 +141,10 @@
             break;
         case 1:
             return UIScreen.mainScreen.bounds.size.height / 3.5;
+            break;
         case 2:
             return UIScreen.mainScreen.bounds.size.height / 3.0;
+            break;
         default:
             return UIScreen.mainScreen.bounds.size.height / 3.0;
             break;

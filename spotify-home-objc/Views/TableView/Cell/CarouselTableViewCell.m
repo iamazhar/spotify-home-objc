@@ -7,7 +7,6 @@
 //
 
 #import "CarouselTableViewCell.h"
-#import "UIView+Extensions.h"
 
 @interface CarouselTableViewCell ()
 
@@ -61,8 +60,6 @@
 
 - (void) setupLayout {
     
-    UIEdgeInsets insetsZero = UIEdgeInsetsZero;
-    
     [self setBackgroundColor:UIColor.clearColor];
     
     // section label stack view
@@ -84,7 +81,12 @@
     // add to view
     [self addSubview:self.containerStackView];
     
-    [self.containerStackView fillSuperview:&insetsZero];
+    [self.containerStackView setTranslatesAutoresizingMaskIntoConstraints:NO];
+
+    [[self.containerStackView.topAnchor constraintEqualToAnchor:self.topAnchor] setActive:YES];
+    [[self.containerStackView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor] setActive:YES];
+    [[self.containerStackView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor] setActive:YES];
+    [[self.containerStackView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor] setActive:YES];
     
 }
 

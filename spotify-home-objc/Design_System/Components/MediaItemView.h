@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "UIColor+BrandColors.h"
-#import "UIView+Extensions.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

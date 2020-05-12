@@ -7,7 +7,6 @@
 //
 
 #import "GridTableViewCell.h"
-#import "UIView+Extensions.h"
 
 @interface GridTableViewCell ()
 @property (nonatomic, weak) UIStackView *containerStackView;
@@ -15,7 +14,8 @@
 
 @implementation GridTableViewCell
 
-- (void)setContainerStackView:(UIStackView *)containerStackView {
+- (void)setContainerStackView:(UIStackView *)containerStackView
+{
     _containerStackView = containerStackView;
     [self.containerStackView setTranslatesAutoresizingMaskIntoConstraints: NO];
     [self.containerStackView setAlignment:UIStackViewAlignmentLeading];
@@ -23,14 +23,16 @@
     [self.containerStackView setSpacing:15.0];
 }
 
-- (void)setSectionLabel:(UILabel *)sectionLabel {
+- (void)setSectionLabel:(UILabel *)sectionLabel
+{
     _sectionLabel = sectionLabel;
     [self.sectionLabel setTranslatesAutoresizingMaskIntoConstraints: NO];
     [self.sectionLabel setFont:[UIFont systemFontOfSize:20 weight:UIFontWeightBold]];
     [self.sectionLabel setText:@"Good Evening"];
 }
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
     if (self) {
@@ -42,26 +44,31 @@
 - (void) setupLayout {
     [self setBackgroundColor:UIColor.clearColor];
     
-    UIEdgeInsets paddingZero = UIEdgeInsetsZero;
-    UIEdgeInsets padding = UIEdgeInsetsMake(0, 15, 0, 15);
-    CGSize size = CGSizeMake(0, 184);
-    CGSize sizeZero = CGSizeZero;
+    [self.gridCollectionView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self.containerStackView setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     [self.containerStackView addArrangedSubview:self.sectionLabel];
     [self.containerStackView addArrangedSubview:self.gridCollectionView];
     
-    [self.gridCollectionView anchorTop:nil leading:self.containerStackView.leadingAnchor bottom:nil trailing:self.containerStackView.trailingAnchor padding:&paddingZero size:&size];
+    [[self.gridCollectionView.leadingAnchor constraintEqualToAnchor:self.containerStackView.leadingAnchor] setActive:YES];;
+    [[self.gridCollectionView.trailingAnchor constraintEqualToAnchor:self.containerStackView.trailingAnchor] setActive:YES];;
+    [[self.gridCollectionView.heightAnchor constraintEqualToConstant:184] setActive:YES];
     
     [self addSubview:self.containerStackView];
-    [self.containerStackView anchorTop:self.topAnchor leading:self.leadingAnchor bottom:self.bottomAnchor trailing:self.trailingAnchor padding:&padding size:&sizeZero];
+    [[self.containerStackView.topAnchor constraintEqualToAnchor:self.topAnchor] setActive:YES];
+    [[self.containerStackView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:15] setActive:YES];
+    [[self.containerStackView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor] setActive:YES];
+    [[self.containerStackView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-15] setActive:YES];
 }
 
-- (void)awakeFromNib {
+- (void)awakeFromNib
+{
     [super awakeFromNib];
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state

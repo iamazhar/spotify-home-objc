@@ -2,27 +2,27 @@
 
 @implementation UIColor (BrandColors)
 
-- (UIColor *)homeBgGradientTop {
++ (UIColor *)homeBgGradientTop {
 	return [UIColor colorWithRed:(126.0)/255 green:(63.0)/255 blue:(71.0)/255 alpha:(1.0)];
 }
 
-- (UIColor *)bgGridCell {
++ (UIColor *)bgGridCell {
 	return [UIColor colorWithRed:(42.0)/255 green:(40.0)/255 blue:(40.0)/255 alpha:(1.0)];
 }
 
-- (UIColor *)homeBgGradientBottom {
++ (UIColor *)homeBgGradientBottom {
 	return [UIColor colorWithRed:(18.0)/255 green:(18.0)/255 blue:(18.0)/255 alpha:(1.0)];
 }
 
-- (UIColor *)secondaryGrey {
++ (UIColor *)secondaryGrey {
 	return [UIColor colorWithRed:(171.0)/255 green:(171.0)/255 blue:(171.0)/255 alpha:(1.0)];
 }
 
-- (UIColor *)primaryWhite {
++ (UIColor *)primaryWhite {
 	return [UIColor colorWithRed:(255.0)/255 green:(255.0)/255 blue:(255.0)/255 alpha:(1.0)];
 }
 
-- (UIColor *)libraryPodcastEpisodeContainer {
++ (UIColor *)libraryPodcastEpisodeContainer {
 	return [UIColor colorWithRed:(40.0)/255 green:(40.0)/255 blue:(40.0)/255 alpha:(1.0)];
 }
 
